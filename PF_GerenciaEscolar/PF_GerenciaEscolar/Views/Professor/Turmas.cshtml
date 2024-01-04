@@ -1,0 +1,106 @@
+﻿@using PF_GerenciaEscolar.Data.Enum
+@model Turma
+
+<div class="album py-5 bg-light">
+    <div class="container">
+
+        <section class="jumbotron text-center">
+            <div class="container">
+                <h1 class="jumbotron-heading">Turmas</h1>
+                <a asp-controller="professor" asp-action="Avaliacoes" class="btn btn-primary my-2">Avaliações</a>
+                <a asp-controller="professor" asp-action="Index" class="btn btn-secondary my-2">Voltar</a>
+            </div>
+        </section>
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mb-4 box-shadow">
+                    <div class="card-body">
+                        <p class="card-text">@Turma.T140</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <a asp-controller="professor" asp-action="DetalhesTurma" asp-route-turma="@Turma.T140" type="button" class="btn btn-sm btn-outline-secondary">Ver</a>
+                            </div>
+                            <small class="text-muted"></small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4 box-shadow">
+                    <div class="card-body">
+                        <p class="card-text">@Turma.T150</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <a asp-controller="professor" asp-action="DetalhesTurma" asp-route-turma="@Turma.T150" type="button" class="btn btn-sm btn-outline-secondary">Ver</a>
+                            </div>
+                            <small class="text-muted"></small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4 box-shadow">
+                    <div class="card-body">
+                        <p class="card-text">@Turma.T160</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <a asp-controller="professor" asp-action="DetalhesTurma" asp-route-turma="@Turma.T160" type="button" class="btn btn-sm btn-outline-secondary">Ver</a>
+                            </div>
+                            <small class="text-muted"></small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4 box-shadow">
+                    <div class="card-body">
+                        <p class="card-text">@Turma.T170</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <a asp-controller="professor" asp-action="DetalhesTurma" asp-route-turma="@Turma.T170" type="button" class="btn btn-sm btn-outline-secondary">Ver</a>
+                            </div>
+                            <small class="text-muted"></small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4 box-shadow">
+                    <div class="card-body">
+                        <p class="card-text">@Turma.T180</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <a asp-controller="professor" asp-action="DetalhesTurma" asp-route-turma="@Turma.T180" type="button" class="btn btn-sm btn-outline-secondary">Ver</a>
+                            </div>
+                            <small class="text-muted"></small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4 box-shadow">
+                    <div class="card-body">
+                        <p class="card-text">@Turma.T190</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <a asp-controller="professor" asp-action="DetalhesTurma" asp-route-turma="@Turma.T190" type="button" class="btn btn-sm btn-outline-secondary">Ver</a>
+                            </div>
+                            <small class="text-muted"></small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+        background: linear-gradient(to right, #ccffff, #1565c0)
+    }
+</style>

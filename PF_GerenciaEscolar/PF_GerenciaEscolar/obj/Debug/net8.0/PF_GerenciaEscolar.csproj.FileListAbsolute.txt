@@ -1,0 +1,156 @@
+C:\Users\aliss\Documentos\Github\Canivete Suíço\Projeto Final\PF_GerenciaEscolar\PF_GerenciaEscolar\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\aliss\Documentos\Github\Canivete Suíço\Projeto Final\PF_GerenciaEscolar\PF_GerenciaEscolar\bin\Debug\net8.0\appsettings.json
+C:\Users\aliss\Documentos\Github\Canivete Suíço\Projeto Final\PF_GerenciaEscolar\PF_GerenciaEscolar\bin\Debug\net8.0\PF_GerenciaEscolar.staticwebassets.runtime.json
+C:\Users\aliss\Documentos\Github\Canivete Suíço\Projeto Final\PF_GerenciaEscolar\PF_GerenciaEscolar\bin\Debug\net8.0\PF_GerenciaEscolar.exe
+C:\Users\aliss\Documentos\Github\Canivete Suíço\Projeto Final\PF_GerenciaEscolar\PF_GerenciaEscolar\bin\Debug\net8.0\PF_GerenciaEscolar.deps.json
+C:\Users\aliss\Documentos\Github\Canivete Suíço\Projeto Final\PF_GerenciaEscolar\PF_GerenciaEscolar\bin\Debug\net8.0\PF_GerenciaEscolar.runtimeconfig.json
+C:\Users\aliss\Documentos\Github\Canivete Suíço\Projeto Final\PF_GerenciaEscolar\PF_GerenciaEscolar\bin\Debug\net8.0\PF_GerenciaEscolar.dll
+C:\Users\aliss\Documentos\Github\Canivete Suíço\Projeto Final\PF_GerenciaEscolar\PF_GerenciaEscolar\bin\Debug\net8.0\PF_GerenciaEscolar.pdb
+C:\Users\aliss\Documentos\Github\Canivete Suíço\Projeto Final\PF_GerenciaEscolar\PF_GerenciaEscolar\bin\Debug\net8.0\Azure.Core.dll
+C:\Users\aliss\Documentos\Github\Canivete Suíço\Projeto Final\PF_GerenciaEscolar\PF_GerenciaEscolar\bin\Debug\net8.0\Azure.Identity.dll
+C:\Users\aliss\Documentos\Github\Canivete Suíço\Projeto Final\PF_GerenciaEscolar\PF_GerenciaEscolar\bin\Debug\net8.0\Castle.Core.dll
+C:\Users\aliss\Documentos\Github\Canivete Suíço\Projeto Final\PF_GerenciaEscolar\PF_GerenciaEscolar\bin\Debug\net8.0\Humanizer.dll
+C:\Users\aliss\Documentos\Github\Canivete Suíço\Projeto Final\PF_GerenciaEscolar\PF_GerenciaEscolar\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\aliss\Documentos\Github\Canivete Suíço\Projeto Final\PF_GerenciaEscolar\PF_GerenciaEscolar\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\aliss\Documentos\Github\Canivete Suíço\Projeto Final\PF_GerenciaEscolar\PF_GerenciaEscolar\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\aliss\Documentos\Github\Canivete Suíço\Projeto Final\PF_GerenciaEscolar\PF_GerenciaEscolar\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\aliss\Documentos\Github\Canivete Suíço\Projeto Final\PF_GerenciaEscolar\PF_GerenciaEscolar\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\aliss\Documentos\Github\Canivete Suíço\Projeto Final\PF_GerenciaEscolar\PF_GerenciaEscolar\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Proxies.dll
+C:\Users\aliss\Documentos\Github\Canivete Suíço\Projeto Final\PF_GerenciaEscolar\PF_GerenciaEscolar\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\aliss\Documentos\Github\Canivete Suíço\Projeto Final\PF_GerenciaEscolar\PF_GerenciaEscolar\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\aliss\Documentos\Github\Canivete Suíço\Projeto Final\PF_GerenciaEscolar\PF_GerenciaEscolar\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\aliss\Documentos\Github\Canivete Suíço\Projeto Final\PF_GerenciaEscolar\PF_GerenciaEscolar\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+C:\Users\aliss\Documentos\Github\Canivete Suíço\Projeto Final\PF_GerenciaEscolar\PF_GerenciaEscolar\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\aliss\Documentos\Github\Canivete Suíço\Projeto Final\PF_GerenciaEscolar\PF_GerenciaEscolar\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\aliss\Documentos\Github\Canivete Suíço\Projeto Final\PF_GerenciaEscolar\PF_GerenciaEscolar\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\aliss\Documentos\Github\Canivete Suíço\Projeto Final\PF_GerenciaEscolar\PF_GerenciaEscolar\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\aliss\Documentos\Github\Canivete Suíço\Projeto Final\PF_GerenciaEscolar\PF_GerenciaEscolar\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\aliss\Documentos\Github\Canivete Suíço\Projeto Final\PF_GerenciaEscolar\PF_GerenciaEscolar\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\aliss\Documentos\Github\Canivete Suíço\Projeto Final\PF_GerenciaEscolar\PF_GerenciaEscolar\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\aliss\Documentos\Github\Canivete Suíço\Projeto Final\PF_GerenciaEscolar\PF_GerenciaEscolar\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+C:\Users\aliss\Documentos\Github\Canivete Suíço\Projeto Final\PF_GerenciaEscolar\PF_GerenciaEscolar\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\aliss\Documentos\Github\Canivete Suíço\Projeto Final\PF_GerenciaEscolar\PF_GerenciaEscolar\bin\Debug\net8.0\Mono.TextTemplating.dll
+C:\Users\aliss\Documentos\Github\Canivete Suíço\Projeto Final\PF_GerenciaEscolar\PF_GerenciaEscolar\bin\Debug\net8.0\System.CodeDom.dll
+C:\Users\aliss\Documentos\Github\Canivete Suíço\Projeto Final\PF_GerenciaEscolar\PF_GerenciaEscolar\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+C:\Users\aliss\Documentos\Github\Canivete Suíço\Projeto Final\PF_GerenciaEscolar\PF_GerenciaEscolar\bin\Debug\net8.0\System.Drawing.Common.dll
+C:\Users\aliss\Documentos\Github\Canivete Suíço\Projeto Final\PF_GerenciaEscolar\PF_GerenciaEscolar\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\aliss\Documentos\Github\Canivete Suíço\Projeto Final\PF_GerenciaEscolar\PF_GerenciaEscolar\bin\Debug\net8.0\System.Memory.Data.dll
+C:\Users\aliss\Documentos\Github\Canivete Suíço\Projeto Final\PF_GerenciaEscolar\PF_GerenciaEscolar\bin\Debug\net8.0\System.Runtime.Caching.dll
+C:\Users\aliss\Documentos\Github\Canivete Suíço\Projeto Final\PF_GerenciaEscolar\PF_GerenciaEscolar\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\aliss\Documentos\Github\Canivete Suíço\Projeto Final\PF_GerenciaEscolar\PF_GerenciaEscolar\bin\Debug\net8.0\System.Security.Permissions.dll
+C:\Users\aliss\Documentos\Github\Canivete Suíço\Projeto Final\PF_GerenciaEscolar\PF_GerenciaEscolar\bin\Debug\net8.0\System.Windows.Extensions.dll
+C:\Users\aliss\Documentos\Github\Canivete Suíço\Projeto Final\PF_GerenciaEscolar\PF_GerenciaEscolar\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\aliss\Documentos\Github\Canivete Suíço\Projeto Final\PF_GerenciaEscolar\PF_GerenciaEscolar\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\aliss\Documentos\Github\Canivete Suíço\Projeto Final\PF_GerenciaEscolar\PF_GerenciaEscolar\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\aliss\Documentos\Github\Canivete Suíço\Projeto Final\PF_GerenciaEscolar\PF_GerenciaEscolar\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\aliss\Documentos\Github\Canivete Suíço\Projeto Final\PF_GerenciaEscolar\PF_GerenciaEscolar\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\aliss\Documentos\Github\Canivete Suíço\Projeto Final\PF_GerenciaEscolar\PF_GerenciaEscolar\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\aliss\Documentos\Github\Canivete Suíço\Projeto Final\PF_GerenciaEscolar\PF_GerenciaEscolar\bin\Debug\net8.0\runtimes\win\lib\net7.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\aliss\Documentos\Github\Canivete Suíço\Projeto Final\PF_GerenciaEscolar\PF_GerenciaEscolar\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Drawing.Common.dll
+C:\Users\aliss\Documentos\Github\Canivete Suíço\Projeto Final\PF_GerenciaEscolar\PF_GerenciaEscolar\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+C:\Users\aliss\Documentos\Github\Canivete Suíço\Projeto Final\PF_GerenciaEscolar\PF_GerenciaEscolar\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\aliss\Documentos\Github\Canivete Suíço\Projeto Final\PF_GerenciaEscolar\PF_GerenciaEscolar\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll
+C:\Users\aliss\Documentos\Github\Canivete Suíço\Projeto Final\PF_GerenciaEscolar\PF_GerenciaEscolar\obj\Debug\net8.0\PF_GerenciaEscolar.csproj.AssemblyReference.cache
+C:\Users\aliss\Documentos\Github\Canivete Suíço\Projeto Final\PF_GerenciaEscolar\PF_GerenciaEscolar\obj\Debug\net8.0\PF_GerenciaEscolar.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\aliss\Documentos\Github\Canivete Suíço\Projeto Final\PF_GerenciaEscolar\PF_GerenciaEscolar\obj\Debug\net8.0\PF_GerenciaEscolar.AssemblyInfoInputs.cache
+C:\Users\aliss\Documentos\Github\Canivete Suíço\Projeto Final\PF_GerenciaEscolar\PF_GerenciaEscolar\obj\Debug\net8.0\PF_GerenciaEscolar.AssemblyInfo.cs
+C:\Users\aliss\Documentos\Github\Canivete Suíço\Projeto Final\PF_GerenciaEscolar\PF_GerenciaEscolar\obj\Debug\net8.0\PF_GerenciaEscolar.csproj.CoreCompileInputs.cache
+C:\Users\aliss\Documentos\Github\Canivete Suíço\Projeto Final\PF_GerenciaEscolar\PF_GerenciaEscolar\obj\Debug\net8.0\PF_GerenciaEscolar.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\aliss\Documentos\Github\Canivete Suíço\Projeto Final\PF_GerenciaEscolar\PF_GerenciaEscolar\obj\Debug\net8.0\PF_GerenciaEscolar.RazorAssemblyInfo.cache
+C:\Users\aliss\Documentos\Github\Canivete Suíço\Projeto Final\PF_GerenciaEscolar\PF_GerenciaEscolar\obj\Debug\net8.0\PF_GerenciaEscolar.RazorAssemblyInfo.cs
+C:\Users\aliss\Documentos\Github\Canivete Suíço\Projeto Final\PF_GerenciaEscolar\PF_GerenciaEscolar\obj\Debug\net8.0\PF_GerenciaEscolar.sourcelink.json
+C:\Users\aliss\Documentos\Github\Canivete Suíço\Projeto Final\PF_GerenciaEscolar\PF_GerenciaEscolar\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\aliss\Documentos\Github\Canivete Suíço\Projeto Final\PF_GerenciaEscolar\PF_GerenciaEscolar\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\aliss\Documentos\Github\Canivete Suíço\Projeto Final\PF_GerenciaEscolar\PF_GerenciaEscolar\obj\Debug\net8.0\staticwebassets\msbuild.PF_GerenciaEscolar.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\aliss\Documentos\Github\Canivete Suíço\Projeto Final\PF_GerenciaEscolar\PF_GerenciaEscolar\obj\Debug\net8.0\staticwebassets\msbuild.build.PF_GerenciaEscolar.props
+C:\Users\aliss\Documentos\Github\Canivete Suíço\Projeto Final\PF_GerenciaEscolar\PF_GerenciaEscolar\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.PF_GerenciaEscolar.props
+C:\Users\aliss\Documentos\Github\Canivete Suíço\Projeto Final\PF_GerenciaEscolar\PF_GerenciaEscolar\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.PF_GerenciaEscolar.props
+C:\Users\aliss\Documentos\Github\Canivete Suíço\Projeto Final\PF_GerenciaEscolar\PF_GerenciaEscolar\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\aliss\Documentos\Github\Canivete Suíço\Projeto Final\PF_GerenciaEscolar\PF_GerenciaEscolar\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\aliss\Documentos\Github\Canivete Suíço\Projeto Final\PF_GerenciaEscolar\PF_GerenciaEscolar\obj\Debug\net8.0\scopedcss\bundle\PF_GerenciaEscolar.styles.css
+C:\Users\aliss\Documentos\Github\Canivete Suíço\Projeto Final\PF_GerenciaEscolar\PF_GerenciaEscolar\obj\Debug\net8.0\scopedcss\projectbundle\PF_GerenciaEscolar.bundle.scp.css
+C:\Users\aliss\Documentos\Github\Canivete Suíço\Projeto Final\PF_GerenciaEscolar\PF_GerenciaEscolar\obj\Debug\net8.0\PF_GerenciaEscolar.csproj.CopyComplete
+C:\Users\aliss\Documentos\Github\Canivete Suíço\Projeto Final\PF_GerenciaEscolar\PF_GerenciaEscolar\obj\Debug\net8.0\PF_GerenciaEscolar.dll
+C:\Users\aliss\Documentos\Github\Canivete Suíço\Projeto Final\PF_GerenciaEscolar\PF_GerenciaEscolar\obj\Debug\net8.0\refint\PF_GerenciaEscolar.dll
+C:\Users\aliss\Documentos\Github\Canivete Suíço\Projeto Final\PF_GerenciaEscolar\PF_GerenciaEscolar\obj\Debug\net8.0\PF_GerenciaEscolar.pdb
+C:\Users\aliss\Documentos\Github\Canivete Suíço\Projeto Final\PF_GerenciaEscolar\PF_GerenciaEscolar\obj\Debug\net8.0\PF_GerenciaEscolar.genruntimeconfig.cache
+C:\Users\aliss\Documentos\Github\Canivete Suíço\Projeto Final\PF_GerenciaEscolar\PF_GerenciaEscolar\obj\Debug\net8.0\ref\PF_GerenciaEscolar.dll
+C:\Users\aliss\Documentos\Github\Canivete Suíço\Projeto Final\PF_GerenciaEscolar\PF_GerenciaEscolar\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\aliss\Documentos\Github\Academia ATOS\PF_GerenciaEscolar\PF_GerenciaEscolar\PF_GerenciaEscolar\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\aliss\Documentos\Github\Academia ATOS\PF_GerenciaEscolar\PF_GerenciaEscolar\PF_GerenciaEscolar\bin\Debug\net8.0\appsettings.json
+C:\Users\aliss\Documentos\Github\Academia ATOS\PF_GerenciaEscolar\PF_GerenciaEscolar\PF_GerenciaEscolar\bin\Debug\net8.0\PF_GerenciaEscolar.staticwebassets.runtime.json
+C:\Users\aliss\Documentos\Github\Academia ATOS\PF_GerenciaEscolar\PF_GerenciaEscolar\PF_GerenciaEscolar\bin\Debug\net8.0\PF_GerenciaEscolar.exe
+C:\Users\aliss\Documentos\Github\Academia ATOS\PF_GerenciaEscolar\PF_GerenciaEscolar\PF_GerenciaEscolar\bin\Debug\net8.0\PF_GerenciaEscolar.deps.json
+C:\Users\aliss\Documentos\Github\Academia ATOS\PF_GerenciaEscolar\PF_GerenciaEscolar\PF_GerenciaEscolar\bin\Debug\net8.0\PF_GerenciaEscolar.runtimeconfig.json
+C:\Users\aliss\Documentos\Github\Academia ATOS\PF_GerenciaEscolar\PF_GerenciaEscolar\PF_GerenciaEscolar\bin\Debug\net8.0\PF_GerenciaEscolar.dll
+C:\Users\aliss\Documentos\Github\Academia ATOS\PF_GerenciaEscolar\PF_GerenciaEscolar\PF_GerenciaEscolar\bin\Debug\net8.0\PF_GerenciaEscolar.pdb
+C:\Users\aliss\Documentos\Github\Academia ATOS\PF_GerenciaEscolar\PF_GerenciaEscolar\PF_GerenciaEscolar\bin\Debug\net8.0\Azure.Core.dll
+C:\Users\aliss\Documentos\Github\Academia ATOS\PF_GerenciaEscolar\PF_GerenciaEscolar\PF_GerenciaEscolar\bin\Debug\net8.0\Azure.Identity.dll
+C:\Users\aliss\Documentos\Github\Academia ATOS\PF_GerenciaEscolar\PF_GerenciaEscolar\PF_GerenciaEscolar\bin\Debug\net8.0\Castle.Core.dll
+C:\Users\aliss\Documentos\Github\Academia ATOS\PF_GerenciaEscolar\PF_GerenciaEscolar\PF_GerenciaEscolar\bin\Debug\net8.0\Humanizer.dll
+C:\Users\aliss\Documentos\Github\Academia ATOS\PF_GerenciaEscolar\PF_GerenciaEscolar\PF_GerenciaEscolar\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\aliss\Documentos\Github\Academia ATOS\PF_GerenciaEscolar\PF_GerenciaEscolar\PF_GerenciaEscolar\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\aliss\Documentos\Github\Academia ATOS\PF_GerenciaEscolar\PF_GerenciaEscolar\PF_GerenciaEscolar\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\aliss\Documentos\Github\Academia ATOS\PF_GerenciaEscolar\PF_GerenciaEscolar\PF_GerenciaEscolar\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\aliss\Documentos\Github\Academia ATOS\PF_GerenciaEscolar\PF_GerenciaEscolar\PF_GerenciaEscolar\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\aliss\Documentos\Github\Academia ATOS\PF_GerenciaEscolar\PF_GerenciaEscolar\PF_GerenciaEscolar\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\aliss\Documentos\Github\Academia ATOS\PF_GerenciaEscolar\PF_GerenciaEscolar\PF_GerenciaEscolar\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Proxies.dll
+C:\Users\aliss\Documentos\Github\Academia ATOS\PF_GerenciaEscolar\PF_GerenciaEscolar\PF_GerenciaEscolar\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\aliss\Documentos\Github\Academia ATOS\PF_GerenciaEscolar\PF_GerenciaEscolar\PF_GerenciaEscolar\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\aliss\Documentos\Github\Academia ATOS\PF_GerenciaEscolar\PF_GerenciaEscolar\PF_GerenciaEscolar\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\aliss\Documentos\Github\Academia ATOS\PF_GerenciaEscolar\PF_GerenciaEscolar\PF_GerenciaEscolar\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+C:\Users\aliss\Documentos\Github\Academia ATOS\PF_GerenciaEscolar\PF_GerenciaEscolar\PF_GerenciaEscolar\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\aliss\Documentos\Github\Academia ATOS\PF_GerenciaEscolar\PF_GerenciaEscolar\PF_GerenciaEscolar\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\aliss\Documentos\Github\Academia ATOS\PF_GerenciaEscolar\PF_GerenciaEscolar\PF_GerenciaEscolar\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\aliss\Documentos\Github\Academia ATOS\PF_GerenciaEscolar\PF_GerenciaEscolar\PF_GerenciaEscolar\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\aliss\Documentos\Github\Academia ATOS\PF_GerenciaEscolar\PF_GerenciaEscolar\PF_GerenciaEscolar\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\aliss\Documentos\Github\Academia ATOS\PF_GerenciaEscolar\PF_GerenciaEscolar\PF_GerenciaEscolar\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\aliss\Documentos\Github\Academia ATOS\PF_GerenciaEscolar\PF_GerenciaEscolar\PF_GerenciaEscolar\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\aliss\Documentos\Github\Academia ATOS\PF_GerenciaEscolar\PF_GerenciaEscolar\PF_GerenciaEscolar\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+C:\Users\aliss\Documentos\Github\Academia ATOS\PF_GerenciaEscolar\PF_GerenciaEscolar\PF_GerenciaEscolar\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\aliss\Documentos\Github\Academia ATOS\PF_GerenciaEscolar\PF_GerenciaEscolar\PF_GerenciaEscolar\bin\Debug\net8.0\Mono.TextTemplating.dll
+C:\Users\aliss\Documentos\Github\Academia ATOS\PF_GerenciaEscolar\PF_GerenciaEscolar\PF_GerenciaEscolar\bin\Debug\net8.0\System.CodeDom.dll
+C:\Users\aliss\Documentos\Github\Academia ATOS\PF_GerenciaEscolar\PF_GerenciaEscolar\PF_GerenciaEscolar\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+C:\Users\aliss\Documentos\Github\Academia ATOS\PF_GerenciaEscolar\PF_GerenciaEscolar\PF_GerenciaEscolar\bin\Debug\net8.0\System.Drawing.Common.dll
+C:\Users\aliss\Documentos\Github\Academia ATOS\PF_GerenciaEscolar\PF_GerenciaEscolar\PF_GerenciaEscolar\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\aliss\Documentos\Github\Academia ATOS\PF_GerenciaEscolar\PF_GerenciaEscolar\PF_GerenciaEscolar\bin\Debug\net8.0\System.Memory.Data.dll
+C:\Users\aliss\Documentos\Github\Academia ATOS\PF_GerenciaEscolar\PF_GerenciaEscolar\PF_GerenciaEscolar\bin\Debug\net8.0\System.Runtime.Caching.dll
+C:\Users\aliss\Documentos\Github\Academia ATOS\PF_GerenciaEscolar\PF_GerenciaEscolar\PF_GerenciaEscolar\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\aliss\Documentos\Github\Academia ATOS\PF_GerenciaEscolar\PF_GerenciaEscolar\PF_GerenciaEscolar\bin\Debug\net8.0\System.Security.Permissions.dll
+C:\Users\aliss\Documentos\Github\Academia ATOS\PF_GerenciaEscolar\PF_GerenciaEscolar\PF_GerenciaEscolar\bin\Debug\net8.0\System.Windows.Extensions.dll
+C:\Users\aliss\Documentos\Github\Academia ATOS\PF_GerenciaEscolar\PF_GerenciaEscolar\PF_GerenciaEscolar\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\aliss\Documentos\Github\Academia ATOS\PF_GerenciaEscolar\PF_GerenciaEscolar\PF_GerenciaEscolar\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\aliss\Documentos\Github\Academia ATOS\PF_GerenciaEscolar\PF_GerenciaEscolar\PF_GerenciaEscolar\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\aliss\Documentos\Github\Academia ATOS\PF_GerenciaEscolar\PF_GerenciaEscolar\PF_GerenciaEscolar\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\aliss\Documentos\Github\Academia ATOS\PF_GerenciaEscolar\PF_GerenciaEscolar\PF_GerenciaEscolar\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\aliss\Documentos\Github\Academia ATOS\PF_GerenciaEscolar\PF_GerenciaEscolar\PF_GerenciaEscolar\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\aliss\Documentos\Github\Academia ATOS\PF_GerenciaEscolar\PF_GerenciaEscolar\PF_GerenciaEscolar\bin\Debug\net8.0\runtimes\win\lib\net7.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\aliss\Documentos\Github\Academia ATOS\PF_GerenciaEscolar\PF_GerenciaEscolar\PF_GerenciaEscolar\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Drawing.Common.dll
+C:\Users\aliss\Documentos\Github\Academia ATOS\PF_GerenciaEscolar\PF_GerenciaEscolar\PF_GerenciaEscolar\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+C:\Users\aliss\Documentos\Github\Academia ATOS\PF_GerenciaEscolar\PF_GerenciaEscolar\PF_GerenciaEscolar\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\aliss\Documentos\Github\Academia ATOS\PF_GerenciaEscolar\PF_GerenciaEscolar\PF_GerenciaEscolar\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll
+C:\Users\aliss\Documentos\Github\Academia ATOS\PF_GerenciaEscolar\PF_GerenciaEscolar\PF_GerenciaEscolar\obj\Debug\net8.0\PF_GerenciaEscolar.csproj.AssemblyReference.cache
+C:\Users\aliss\Documentos\Github\Academia ATOS\PF_GerenciaEscolar\PF_GerenciaEscolar\PF_GerenciaEscolar\obj\Debug\net8.0\PF_GerenciaEscolar.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\aliss\Documentos\Github\Academia ATOS\PF_GerenciaEscolar\PF_GerenciaEscolar\PF_GerenciaEscolar\obj\Debug\net8.0\PF_GerenciaEscolar.AssemblyInfoInputs.cache
+C:\Users\aliss\Documentos\Github\Academia ATOS\PF_GerenciaEscolar\PF_GerenciaEscolar\PF_GerenciaEscolar\obj\Debug\net8.0\PF_GerenciaEscolar.AssemblyInfo.cs
+C:\Users\aliss\Documentos\Github\Academia ATOS\PF_GerenciaEscolar\PF_GerenciaEscolar\PF_GerenciaEscolar\obj\Debug\net8.0\PF_GerenciaEscolar.csproj.CoreCompileInputs.cache
+C:\Users\aliss\Documentos\Github\Academia ATOS\PF_GerenciaEscolar\PF_GerenciaEscolar\PF_GerenciaEscolar\obj\Debug\net8.0\PF_GerenciaEscolar.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\aliss\Documentos\Github\Academia ATOS\PF_GerenciaEscolar\PF_GerenciaEscolar\PF_GerenciaEscolar\obj\Debug\net8.0\PF_GerenciaEscolar.RazorAssemblyInfo.cache
+C:\Users\aliss\Documentos\Github\Academia ATOS\PF_GerenciaEscolar\PF_GerenciaEscolar\PF_GerenciaEscolar\obj\Debug\net8.0\PF_GerenciaEscolar.RazorAssemblyInfo.cs
+C:\Users\aliss\Documentos\Github\Academia ATOS\PF_GerenciaEscolar\PF_GerenciaEscolar\PF_GerenciaEscolar\obj\Debug\net8.0\PF_GerenciaEscolar.sourcelink.json
+C:\Users\aliss\Documentos\Github\Academia ATOS\PF_GerenciaEscolar\PF_GerenciaEscolar\PF_GerenciaEscolar\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\aliss\Documentos\Github\Academia ATOS\PF_GerenciaEscolar\PF_GerenciaEscolar\PF_GerenciaEscolar\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\aliss\Documentos\Github\Academia ATOS\PF_GerenciaEscolar\PF_GerenciaEscolar\PF_GerenciaEscolar\obj\Debug\net8.0\staticwebassets\msbuild.PF_GerenciaEscolar.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\aliss\Documentos\Github\Academia ATOS\PF_GerenciaEscolar\PF_GerenciaEscolar\PF_GerenciaEscolar\obj\Debug\net8.0\staticwebassets\msbuild.build.PF_GerenciaEscolar.props
+C:\Users\aliss\Documentos\Github\Academia ATOS\PF_GerenciaEscolar\PF_GerenciaEscolar\PF_GerenciaEscolar\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.PF_GerenciaEscolar.props
+C:\Users\aliss\Documentos\Github\Academia ATOS\PF_GerenciaEscolar\PF_GerenciaEscolar\PF_GerenciaEscolar\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.PF_GerenciaEscolar.props
+C:\Users\aliss\Documentos\Github\Academia ATOS\PF_GerenciaEscolar\PF_GerenciaEscolar\PF_GerenciaEscolar\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\aliss\Documentos\Github\Academia ATOS\PF_GerenciaEscolar\PF_GerenciaEscolar\PF_GerenciaEscolar\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\aliss\Documentos\Github\Academia ATOS\PF_GerenciaEscolar\PF_GerenciaEscolar\PF_GerenciaEscolar\obj\Debug\net8.0\scopedcss\bundle\PF_GerenciaEscolar.styles.css
+C:\Users\aliss\Documentos\Github\Academia ATOS\PF_GerenciaEscolar\PF_GerenciaEscolar\PF_GerenciaEscolar\obj\Debug\net8.0\scopedcss\projectbundle\PF_GerenciaEscolar.bundle.scp.css
+C:\Users\aliss\Documentos\Github\Academia ATOS\PF_GerenciaEscolar\PF_GerenciaEscolar\PF_GerenciaEscolar\obj\Debug\net8.0\PF_GerenciaEscolar.csproj.CopyComplete
+C:\Users\aliss\Documentos\Github\Academia ATOS\PF_GerenciaEscolar\PF_GerenciaEscolar\PF_GerenciaEscolar\obj\Debug\net8.0\PF_GerenciaEscolar.dll
+C:\Users\aliss\Documentos\Github\Academia ATOS\PF_GerenciaEscolar\PF_GerenciaEscolar\PF_GerenciaEscolar\obj\Debug\net8.0\refint\PF_GerenciaEscolar.dll
+C:\Users\aliss\Documentos\Github\Academia ATOS\PF_GerenciaEscolar\PF_GerenciaEscolar\PF_GerenciaEscolar\obj\Debug\net8.0\PF_GerenciaEscolar.pdb
+C:\Users\aliss\Documentos\Github\Academia ATOS\PF_GerenciaEscolar\PF_GerenciaEscolar\PF_GerenciaEscolar\obj\Debug\net8.0\PF_GerenciaEscolar.genruntimeconfig.cache
+C:\Users\aliss\Documentos\Github\Academia ATOS\PF_GerenciaEscolar\PF_GerenciaEscolar\PF_GerenciaEscolar\obj\Debug\net8.0\ref\PF_GerenciaEscolar.dll

@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\PF_GerenciaEscolar.props" />
+</Project>

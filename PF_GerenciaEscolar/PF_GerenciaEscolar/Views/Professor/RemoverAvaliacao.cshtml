@@ -1,0 +1,45 @@
+﻿@using PF_GerenciaEscolar.Data.Enum
+@using PF_GerenciaEscolar.ViewModels
+@model Avaliacao
+
+<main role="main">
+    <div class="album py-5 bg-light">
+        <section class="jumbotron text-center">
+            <div class="container">
+                <h1 class="jumbotron-heading">Tem certeza de que deseja remover esta avaliação?</h1>
+            </div>
+        </section>
+        <div class="container" align=center>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-4 box-shadow">
+                        <div class="card-body" align="center">
+                            <p class="card-text">@Model.Titulo - @Model.Valor</p>
+                            <p class="card-text">@Model.Disciplina - @Model.Turma</p>
+                            <p class="card-text">@Model.Inicio - @Model.Prazo</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <form method="post" asp-action="RemoverAv" asp-route-id="@Model.Id">
+                <button type="submit" class="btn btn-danger float-right mt-3">Remover</button>
+                <a asp-controller="professor" asp-action="Avaliacoes" class="btn btn-secondary mt-3">Cancelar</a>
+            </form>
+        </div>
+    </div>
+
+</main>
+
+
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+        background: linear-gradient(to right, #ccffff, #1565c0)
+    }
+</style>

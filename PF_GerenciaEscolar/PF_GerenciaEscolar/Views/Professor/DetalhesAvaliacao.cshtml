@@ -1,0 +1,51 @@
+﻿@using PF_GerenciaEscolar.Data.Enum
+@model List<Avaliacao>
+
+<!doctype html>
+<html lang="en">
+<body>
+    <main role="main">
+        <div class="album py-5 bg-light">
+            <section class="jumbotron text-center">
+                <div class="container">
+                    <h1 class="jumbotron-heading">Avaliação</h1>
+                    <a asp-controller="professor" asp-action="Avaliacoes" class="btn btn-secondary my-2">Voltar</a>
+                </div>
+            </section>
+            <div class="container">
+                <div class="row">
+                    @if (Model != null)
+                    {
+                        @foreach (var avaliacao in Model)
+                        {
+                            <div class="col-md-4" align="center">
+                                <div class="card mb-4 box-shadow">
+                                    <div class="card-body">
+                                        <p class="card-text">@avaliacao.Titulo - @avaliacao.Valor</p>
+                                        <p class="card-text">@avaliacao.Disciplina - @avaliacao.Turma</p>
+                                        <p class="card-text">@avaliacao.Inicio - @avaliacao.Prazo</p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="btn-group">                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    }
+                </div>
+            </div>
+        </div>
+
+    </main>
+</body>
+</html>
+
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+        background: linear-gradient(to right, #ccffff, #1565c0)
+    }
+</style>

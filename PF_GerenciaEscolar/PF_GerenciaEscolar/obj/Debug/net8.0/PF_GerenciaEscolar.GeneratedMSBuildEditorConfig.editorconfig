@@ -1,0 +1,131 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = PF_GerenciaEscolar
+build_property.RootNamespace = PF_GerenciaEscolar
+build_property.ProjectDir = C:\Users\aliss\Documentos\Github\Academia ATOS\PF_GerenciaEscolar\PF_GerenciaEscolar\PF_GerenciaEscolar\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\aliss\Documentos\Github\Academia ATOS\PF_GerenciaEscolar\PF_GerenciaEscolar\PF_GerenciaEscolar
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/aliss/Documentos/Github/Academia ATOS/PF_GerenciaEscolar/PF_GerenciaEscolar/PF_GerenciaEscolar/Views/Administrador/CadastrarAluno.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYWRvclxDYWRhc3RyYXJBbHVuby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/aliss/Documentos/Github/Academia ATOS/PF_GerenciaEscolar/PF_GerenciaEscolar/PF_GerenciaEscolar/Views/Administrador/CadastrarProfessor.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYWRvclxDYWRhc3RyYXJQcm9mZXNzb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/aliss/Documentos/Github/Academia ATOS/PF_GerenciaEscolar/PF_GerenciaEscolar/PF_GerenciaEscolar/Views/Administrador/DetalhesAluno.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYWRvclxEZXRhbGhlc0FsdW5vLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/aliss/Documentos/Github/Academia ATOS/PF_GerenciaEscolar/PF_GerenciaEscolar/PF_GerenciaEscolar/Views/Administrador/DetalhesDisciplina.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYWRvclxEZXRhbGhlc0Rpc2NpcGxpbmEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/aliss/Documentos/Github/Academia ATOS/PF_GerenciaEscolar/PF_GerenciaEscolar/PF_GerenciaEscolar/Views/Administrador/DetalhesProfessor.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYWRvclxEZXRhbGhlc1Byb2Zlc3Nvci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/aliss/Documentos/Github/Academia ATOS/PF_GerenciaEscolar/PF_GerenciaEscolar/PF_GerenciaEscolar/Views/Administrador/DetalhesTurma.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYWRvclxEZXRhbGhlc1R1cm1hLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/aliss/Documentos/Github/Academia ATOS/PF_GerenciaEscolar/PF_GerenciaEscolar/PF_GerenciaEscolar/Views/Administrador/Disciplinas.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYWRvclxEaXNjaXBsaW5hcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/aliss/Documentos/Github/Academia ATOS/PF_GerenciaEscolar/PF_GerenciaEscolar/PF_GerenciaEscolar/Views/Administrador/EditarAluno.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYWRvclxFZGl0YXJBbHVuby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/aliss/Documentos/Github/Academia ATOS/PF_GerenciaEscolar/PF_GerenciaEscolar/PF_GerenciaEscolar/Views/Administrador/EditarProfessor.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYWRvclxFZGl0YXJQcm9mZXNzb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/aliss/Documentos/Github/Academia ATOS/PF_GerenciaEscolar/PF_GerenciaEscolar/PF_GerenciaEscolar/Views/Administrador/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYWRvclxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/aliss/Documentos/Github/Academia ATOS/PF_GerenciaEscolar/PF_GerenciaEscolar/PF_GerenciaEscolar/Views/Administrador/RemoverAluno.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYWRvclxSZW1vdmVyQWx1bm8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/aliss/Documentos/Github/Academia ATOS/PF_GerenciaEscolar/PF_GerenciaEscolar/PF_GerenciaEscolar/Views/Administrador/RemoverProfessor.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYWRvclxSZW1vdmVyUHJvZmVzc29yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/aliss/Documentos/Github/Academia ATOS/PF_GerenciaEscolar/PF_GerenciaEscolar/PF_GerenciaEscolar/Views/Administrador/Turmas.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYWRvclxUdXJtYXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/aliss/Documentos/Github/Academia ATOS/PF_GerenciaEscolar/PF_GerenciaEscolar/PF_GerenciaEscolar/Views/Aluno/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWx1bm9cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/aliss/Documentos/Github/Academia ATOS/PF_GerenciaEscolar/PF_GerenciaEscolar/PF_GerenciaEscolar/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/aliss/Documentos/Github/Academia ATOS/PF_GerenciaEscolar/PF_GerenciaEscolar/PF_GerenciaEscolar/Views/Professor/Avaliacoes.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmVzc29yXEF2YWxpYWNvZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/aliss/Documentos/Github/Academia ATOS/PF_GerenciaEscolar/PF_GerenciaEscolar/PF_GerenciaEscolar/Views/Professor/CadastrarAvaliacao.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmVzc29yXENhZGFzdHJhckF2YWxpYWNhby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/aliss/Documentos/Github/Academia ATOS/PF_GerenciaEscolar/PF_GerenciaEscolar/PF_GerenciaEscolar/Views/Professor/DetalhesAluno.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmVzc29yXERldGFsaGVzQWx1bm8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/aliss/Documentos/Github/Academia ATOS/PF_GerenciaEscolar/PF_GerenciaEscolar/PF_GerenciaEscolar/Views/Professor/DetalhesAvaliacao.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmVzc29yXERldGFsaGVzQXZhbGlhY2FvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/aliss/Documentos/Github/Academia ATOS/PF_GerenciaEscolar/PF_GerenciaEscolar/PF_GerenciaEscolar/Views/Professor/DetalhesTurma.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmVzc29yXERldGFsaGVzVHVybWEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/aliss/Documentos/Github/Academia ATOS/PF_GerenciaEscolar/PF_GerenciaEscolar/PF_GerenciaEscolar/Views/Professor/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmVzc29yXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/aliss/Documentos/Github/Academia ATOS/PF_GerenciaEscolar/PF_GerenciaEscolar/PF_GerenciaEscolar/Views/Professor/RemoverAvaliacao.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmVzc29yXFJlbW92ZXJBdmFsaWFjYW8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/aliss/Documentos/Github/Academia ATOS/PF_GerenciaEscolar/PF_GerenciaEscolar/PF_GerenciaEscolar/Views/Professor/Turmas.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmVzc29yXFR1cm1hcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/aliss/Documentos/Github/Academia ATOS/PF_GerenciaEscolar/PF_GerenciaEscolar/PF_GerenciaEscolar/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/aliss/Documentos/Github/Academia ATOS/PF_GerenciaEscolar/PF_GerenciaEscolar/PF_GerenciaEscolar/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/aliss/Documentos/Github/Academia ATOS/PF_GerenciaEscolar/PF_GerenciaEscolar/PF_GerenciaEscolar/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/aliss/Documentos/Github/Academia ATOS/PF_GerenciaEscolar/PF_GerenciaEscolar/PF_GerenciaEscolar/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/aliss/Documentos/Github/Academia ATOS/PF_GerenciaEscolar/PF_GerenciaEscolar/PF_GerenciaEscolar/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-gk6u307yk1

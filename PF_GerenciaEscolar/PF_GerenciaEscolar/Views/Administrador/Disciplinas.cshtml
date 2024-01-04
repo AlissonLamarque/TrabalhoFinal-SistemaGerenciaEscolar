@@ -1,0 +1,146 @@
+﻿@using PF_GerenciaEscolar.Data.Enum
+@model Disciplina
+
+<div class="album py-5 bg-light">
+    <div class="container">
+        <section class="jumbotron text-center" style="margin-top: 20px; margin-bottom: 20px;">
+            <div class="container">
+                <h1 class="jumbotron-heading">Disciplinas</h1>
+                <p>
+                    <a asp-controller="administrador" asp-action="CadastrarProfessor" class="btn btn-primary my-2">Cadastrar Professor</a>
+                    <a asp-controller="administrador" asp-action="index" class="btn btn-secondary my-2">Voltar</a>
+                </p>
+            </div>
+        </section>
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mb-4 box-shadow">
+                    <div class="card-body">
+                        <p class="card-text">@Disciplina.Matematica</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <a asp-controller="administrador" asp-action="DetalhesDisciplina" asp-route-disciplina="@Disciplina.Matematica" type="button" class="btn btn-sm btn-outline-secondary">Ver</a>
+                            </div>
+                            <small class="text-muted"></small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4 box-shadow">
+                    <div class="card-body">
+                        <p class="card-text">@Disciplina.Portugues</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <a asp-controller="administrador" asp-action="DetalhesDisciplina" asp-route-disciplina="@Disciplina.Portugues" type="button" class="btn btn-sm btn-outline-secondary">Ver</a>
+                            </div>
+                            <small class="text-muted"></small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4 box-shadow">
+                    <div class="card-body">
+                        <p class="card-text">@Disciplina.Fisica</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <a asp-controller="administrador" asp-action="DetalhesDisciplina" asp-route-disciplina="@Disciplina.Fisica" type="button" class="btn btn-sm btn-outline-secondary">Ver</a>
+                            </div>
+                            <small class="text-muted"></small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4 box-shadow">
+                    <div class="card-body">
+                        <p class="card-text">@Disciplina.Quimica</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <a asp-controller="administrador" asp-action="DetalhesDisciplina" asp-route-disciplina="@Disciplina.Quimica" type="button" class="btn btn-sm btn-outline-secondary">Ver</a>
+                            </div>
+                            <small class="text-muted"></small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4 box-shadow">
+                    <div class="card-body">
+                        <p class="card-text">@Disciplina.Biologia</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <a asp-controller="administrador" asp-action="DetalhesDisciplina" asp-route-disciplina="@Disciplina.Biologia" type="button" class="btn btn-sm btn-outline-secondary">Ver</a>
+                            </div>
+                            <small class="text-muted"></small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4 box-shadow">
+                    <div class="card-body">
+                        <p class="card-text">@Disciplina.Geografia</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <a asp-controller="administrador" asp-action="DetalhesDisciplina" asp-route-disciplina="@Disciplina.Geografia" type="button" class="btn btn-sm btn-outline-secondary">Ver</a>
+                            </div>
+                            <small class="text-muted"></small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4 box-shadow">
+                    <div class="card-body">
+                        <p class="card-text">@Disciplina.Historia</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <a asp-controller="administrador" asp-action="DetalhesDisciplina" asp-route-disciplina="@Disciplina.Historia" type="button" class="btn btn-sm btn-outline-secondary">Ver</a>
+                            </div>
+                            <small class="text-muted"></small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4 box-shadow">
+                    <div class="card-body">
+                        <p class="card-text">@Disciplina.Sociologia</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <a asp-controller="administrador" asp-action="DetalhesDisciplina" asp-route-disciplina="@Disciplina.Sociologia" type="button" class="btn btn-sm btn-outline-secondary">Ver</a>
+                            </div>
+                            <small class="text-muted"></small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4 box-shadow">
+                    <div class="card-body">
+                        <p class="card-text">@Disciplina.Filosofia</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <a asp-controller="administrador" asp-action="DetalhesDisciplina" asp-route-disciplina="@Disciplina.Filosofia" type="button" class="btn btn-sm btn-outline-secondary">Ver</a>
+                            </div>
+                            <small class="text-muted"></small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+        background: linear-gradient(to right, #ccffff, #1565c0)
+    }
+</style>

@@ -1,0 +1,48 @@
+﻿@using PF_GerenciaEscolar.Data.Enum
+@using PF_GerenciaEscolar.ViewModels
+@model CreateAlunoViewModel
+
+<form method="post" asp-action="CadastrarAluno">
+    <div class="mb-3">
+        <label asp-for="Nome" class="form-label">Nome</label>
+        <input asp-for="Nome" class="form-control" placeholder="Digite seu nome">
+        <span asp-validation-for="Nome" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="Email" class="form-label">Email</label>
+        <input asp-for="Email" class="form-control" placeholder="Digite um email válido">
+        <span asp-validation-for="Email" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Autenticacao.Cpf" class="form-label">CPF</label>
+        <input asp-for="Autenticacao.Cpf" class="form-control" placeholder="Digite seu CPF">
+        <span asp-validation-for="Autenticacao.Cpf" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Autenticacao.Senha" class="form-label">Senha</label>
+        <input asp-for="Autenticacao.Senha" type="password" class="form-control" placeholder="Digite uma senha válida">
+        <span asp-validation-for="Autenticacao.Senha" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Turma" class="form-label">Turma</label>
+        <select asp-for="Turma" asp-items="Html.GetEnumSelectList(typeof(Turma))">
+            <option>Selecione</option>
+        </select>
+    </div>
+    <button type="submit" class="btn btn-primary">Enviar</button>
+    <a asp-controller="administrador" asp-action="Turmas" class="btn btn-secondary my-2">Cancelar</a>
+
+</form>
+
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+        background: linear-gradient(to right, #ccffff, #1565c0)
+    }
+</style>
