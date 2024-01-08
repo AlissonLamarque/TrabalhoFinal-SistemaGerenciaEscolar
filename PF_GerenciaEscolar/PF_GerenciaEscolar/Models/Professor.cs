@@ -13,7 +13,7 @@ namespace PF_GerenciaEscolar.Models
         public string? Email { get; set; }
 
         [ForeignKey("Autenticacao")]
-        public string? AutenticacaoId { get; set; }
+        public int? AutenticacaoId { get; set; }
         public Autenticacao? Autenticacao { get; set; }
 
         public Disciplina Disciplina { get; set; }

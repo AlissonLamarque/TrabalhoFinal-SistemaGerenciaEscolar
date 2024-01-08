@@ -91,6 +91,7 @@ namespace PF_GerenciaEscolar.Data
                     await roleManager.CreateAsync(new IdentityRole(UserRoles.Aluno));
 
                 //Usuários
+                /*
                 var userManager = serviceScope.ServiceProvider.GetRequiredService<UserManager<Autenticacao>>();
                 string administradorEmail = "alissonlmq@gmail.com";
 
@@ -133,6 +134,7 @@ namespace PF_GerenciaEscolar.Data
                     await userManager.CreateAsync(newAluno, "senhaProfessor");
                     await userManager.AddToRoleAsync(newAluno, UserRoles.Aluno);
                 }
+                */
             }
         }
     }

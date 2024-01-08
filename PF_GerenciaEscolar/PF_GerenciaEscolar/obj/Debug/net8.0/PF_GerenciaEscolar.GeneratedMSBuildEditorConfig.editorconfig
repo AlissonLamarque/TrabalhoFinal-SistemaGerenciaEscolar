@@ -70,6 +70,18 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYWRvclxUdXJtYXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/aliss/Documentos/Github/Academia ATOS/PF_GerenciaEscolar/PF_GerenciaEscolar/PF_GerenciaEscolar/Views/Aluno/Avaliacoes.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWx1bm9cQXZhbGlhY29lcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/aliss/Documentos/Github/Academia ATOS/PF_GerenciaEscolar/PF_GerenciaEscolar/PF_GerenciaEscolar/Views/Aluno/DetalhesAvaliacao.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWx1bm9cRGV0YWxoZXNBdmFsaWFjYW8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/aliss/Documentos/Github/Academia ATOS/PF_GerenciaEscolar/PF_GerenciaEscolar/PF_GerenciaEscolar/Views/Aluno/EnviarAvaliacao.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWx1bm9cRW52aWFyQXZhbGlhY2FvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/aliss/Documentos/Github/Academia ATOS/PF_GerenciaEscolar/PF_GerenciaEscolar/PF_GerenciaEscolar/Views/Aluno/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWx1bm9cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -100,6 +112,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/aliss/Documentos/Github/Academia ATOS/PF_GerenciaEscolar/PF_GerenciaEscolar/PF_GerenciaEscolar/Views/Professor/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmVzc29yXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/aliss/Documentos/Github/Academia ATOS/PF_GerenciaEscolar/PF_GerenciaEscolar/PF_GerenciaEscolar/Views/Professor/NotasAvaliacao.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmVzc29yXE5vdGFzQXZhbGlhY2FvLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/aliss/Documentos/Github/Academia ATOS/PF_GerenciaEscolar/PF_GerenciaEscolar/PF_GerenciaEscolar/Views/Professor/RemoverAvaliacao.cshtml]

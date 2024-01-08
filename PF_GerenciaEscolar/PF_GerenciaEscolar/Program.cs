@@ -22,16 +22,15 @@ namespace PF_GerenciaEscolar
             builder.Services.AddScoped<IProfessorRepositorio, ProfessorRepositorio>();
             builder.Services.AddScoped<IAlunoRepositorio, AlunoRepositorio>();
             builder.Services.AddScoped<IAvaliacaoRepositorio, AvaliacaoRepositorio>();
+            builder.Services.AddScoped<INotaRepositorio, NotaRepositorio>();
 
             builder.Services.AddDbContext<PF_GerenciaEscolarDbContext>(options =>
             {
                 options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
             });
-            //builder.Services.AddIdentity<Autenticacao, IdentityRole>()
-            //    .AddEntityFrameworkStores<PF_GerenciaEscolarDbContext>();
-            //builder.Services.AddMemoryCache();
-            //builder.Services.AddSession();
-            //builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme);
+            
+            builder.Services.AddIdentity<IdentityUser, IdentityRole>()
+                .AddEntityFrameworkStores<PF_GerenciaEscolarDbContext>();
 
             var app = builder.Build();
 
@@ -53,6 +52,8 @@ namespace PF_GerenciaEscolar
             app.UseStaticFiles();
 
             app.UseRouting();
+
+            app.UseAuthentication();
 
             app.UseAuthorization();
 

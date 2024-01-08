@@ -1,5 +1,5 @@
 ﻿@using PF_GerenciaEscolar.Data.Enum
-@model List<Aluno>
+@model Avaliacao
 <!-- ESTÉTICA -->
 
 <!doctype html>
@@ -9,22 +9,22 @@
         <div class="album py-5 bg-light">
             <section class="jumbotron text-center">
                 <div class="container">
-                    <h1 class="jumbotron-heading">Turma @ViewBag.CodigoTurma</h1>
-                    <a asp-controller="professor" asp-action="Turmas" class="btn btn-secondary my-2">Voltar</a>
+                    <h1 class="jumbotron-heading">Avaliação @Model.Titulo</h1>
+                    <a asp-controller="professor" asp-action="Avaliacoes" class="btn btn-secondary my-2">Voltar</a>
                 </div>
             </section>
             <div class="container">
 
                 <div class="row">
-                    @foreach (var aluno in Model)
+                    @foreach (var nota in Model.Notas)
                     {
                         <div class="col-md-4">
                             <div class="card mb-4 box-shadow">
                                 <div class="card-body">
-                                    <p class="card-text">@aluno.Nome - @aluno.Email</p>
+                                    <p class="card-text"> - Valor da Nota: @nota.Valor</p>
                                     <div class="d-flex justify-content-between align-items-center">
                                         <div class="btn-group">
-                                            <a asp-controller="professor" asp-action="DetalhesAluno" asp-route-id="@aluno.Id" type="button" class="btn btn-sm btn-outline-secondary">Ver</a>
+                                            @*<a asp-controller="professor" asp-action="DetalhesAluno" asp-route-id="@aluno.Id" type="button" class="btn btn-sm btn-outline-secondary">Ver</a>*@
                                         </div>
                                     </div>
                                 </div>

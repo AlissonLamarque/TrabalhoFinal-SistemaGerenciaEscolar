@@ -9,10 +9,22 @@
         <input asp-for="Nome" class="form-control" placeholder="Digite seu nome">
         <span asp-validation-for="Nome" class="text-danger"></span>
     </div>
-    <div class="mb-3">
+    <div class="mb-3"> 
         <label asp-for="Email" class="form-label">Email</label>
         <input asp-for="Email" class="form-control" placeholder="Digite um email válido">
         <span asp-validation-for="Email" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3" hidden>
+        <label asp-for="Autenticacao.Cpf" class="form-label">CPF</label>
+        <input asp-for="Autenticacao.Cpf" class="form-control" placeholder="Digite seu CPF">
+        <span asp-validation-for="Autenticacao.Cpf" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3" hidden>
+        <label asp-for="Autenticacao.Senha" class="form-label">Senha</label>
+        <input asp-for="Autenticacao.Senha" type="password" class="form-control" placeholder="Digite uma senha válida">
+        <span asp-validation-for="Autenticacao.Senha" class="text-danger"></span>
     </div>
 
     <div class="mb-3">

@@ -11,13 +11,12 @@
             <section class="jumbotron text-center">
                 <div class="container">
                     <h1 class="jumbotron-heading">Avaliações</h1>
-                    <a asp-controller="professor" asp-action="CadastrarAvaliacao" class="btn btn-primary my-2">Cadastrar Avaliação</a>
-                    <a asp-controller="professor" asp-action="Turmas" class="btn btn-secondary my-2">Voltar</a>
+                    <a asp-controller="aluno" asp-action="Index" class="btn btn-secondary my-2">Voltar</a>
                 </div>
             </section>
             <div class="container">
                 @if (Model != null)
-                {   
+                {
                     <div class="row">
                         @foreach (var avaliacao in Model)
                         {
@@ -27,9 +26,8 @@
                                         <p class="card-text">@avaliacao.Titulo - @avaliacao.Valor</p>
                                         <div class="d-flex justify-content-between align-items-center">
                                             <div class="btn-group">
-                                                <a asp-controller="professor" asp-action="DetalhesAvaliacao" asp-route-id="@avaliacao.Id" type="button" class="btn btn-sm btn-outline-secondary">Ver</a>
-                                                <a asp-controller="professor" asp-action="NotasAvaliacao" asp-route-id="@avaliacao.Id" type="button" class="btn btn-sm btn-outline-secondary">Notas</a>
-                                                <a asp-controller="professor" asp-action="RemoverAvaliacao" asp-route-id="@avaliacao.Id" type="button" class="btn btn-sm btn-outline-secondary">Remover</a>
+                                                <a asp-controller="aluno" asp-action="DetalhesAvaliacao" asp-route-id="@avaliacao.Id" type="button" class="btn btn-sm btn-outline-secondary">Ver</a>
+                                                <a asp-controller="aluno" asp-action="EnviarAvaliacao" asp-route-id="@avaliacao.Id" type="button" class="btn btn-sm btn-outline-secondary">Enviar</a>
                                             </div>
                                         </div>
                                     </div>
@@ -52,4 +50,4 @@
         font-family: sans-serif;
         background: linear-gradient(to right, #ccffff, #1565c0)
     }
-</style>
+</style></h1>

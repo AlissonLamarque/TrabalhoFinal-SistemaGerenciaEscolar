@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using PF_GerenciaEscolar.Data;
 using PF_GerenciaEscolar.Data.Enum;
 using PF_GerenciaEscolar.Interfaces;
@@ -14,16 +15,19 @@ namespace PF_GerenciaEscolar.Controllers
         private readonly IProfessorRepositorio _professorRepositorio;
         private readonly IAvaliacaoRepositorio _avaliacaoRepositorio;
         private readonly IAlunoRepositorio _alunoRepositorio;
+        private readonly INotaRepositorio _notaRepositorio;
 
         public ProfessorController(PF_GerenciaEscolarDbContext contexto,
             IProfessorRepositorio professorRepositorio,
             IAvaliacaoRepositorio avaliacaoRepositorio,
-            IAlunoRepositorio alunoRepositorio)
+            IAlunoRepositorio alunoRepositorio,
+            INotaRepositorio notaRepositorio)
         {
             _contexto = contexto;
             _professorRepositorio = professorRepositorio;
             _avaliacaoRepositorio = avaliacaoRepositorio;
             _alunoRepositorio = alunoRepositorio;
+            _notaRepositorio = notaRepositorio;
         }
 
         public IActionResult Index()
@@ -108,5 +112,38 @@ namespace PF_GerenciaEscolar.Controllers
             _avaliacaoRepositorio.Remover(DetalhesAvaliacao);
             return RedirectToAction("Avaliacoes");
         }
+
+        // NOTAS
+        public async Task<IActionResult> NotasAvaliacao(int id)
+        {
+            var avaliacao = await _avaliacaoRepositorio.GetByIdAsync(id);
+
+            if (avaliacao == null)
+            {
+                return View("Error");
+            }
+
+            await _contexto.Entry(avaliacao)
+                .Collection(a => a.Notas)
+                .Query()
+                .Include(n => n.AlunoId)
+                .LoadAsync();
+
+            return View(avaliacao);
+        }
+
+
+        public async Task<IActionResult> LancarNota(int id)
+        {
+            var NotasAvaliacao = await _avaliacaoRepositorio.GetByIdAsync(id);
+            return View();
+        }
+
+        /*
+        [HttpPost]
+        public async Task<IActionResult> LancarNota()
+        {
+            return View();
+        }*/
     }
 }

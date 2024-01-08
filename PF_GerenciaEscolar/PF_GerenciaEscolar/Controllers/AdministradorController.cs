@@ -102,6 +102,7 @@ namespace PF_GerenciaEscolar.Controllers
             if(professor == null) return View("Error");
             var professorVM = new EditProfessorViewModel
             {
+                Id = professor.Id,
                 Nome = professor.Nome,
                 Email = professor.Email,
                 AutenticacaoId = professor.AutenticacaoId,
@@ -198,6 +199,7 @@ namespace PF_GerenciaEscolar.Controllers
             if (aluno == null) return View("Error");
             var alunoVM = new EditAlunoViewModel
             {
+                Id = aluno.Id,
                 Nome = aluno.Nome,
                 Email = aluno.Email,
                 AutenticacaoId = aluno.AutenticacaoId,

@@ -88,7 +88,6 @@ C:\Users\aliss\Documentos\Github\Academia ATOS\PF_GerenciaEscolar\PF_GerenciaEsc
 C:\Users\aliss\Documentos\Github\Academia ATOS\PF_GerenciaEscolar\PF_GerenciaEscolar\PF_GerenciaEscolar\bin\Debug\net8.0\Azure.Identity.dll
 C:\Users\aliss\Documentos\Github\Academia ATOS\PF_GerenciaEscolar\PF_GerenciaEscolar\PF_GerenciaEscolar\bin\Debug\net8.0\Castle.Core.dll
 C:\Users\aliss\Documentos\Github\Academia ATOS\PF_GerenciaEscolar\PF_GerenciaEscolar\PF_GerenciaEscolar\bin\Debug\net8.0\Humanizer.dll
-C:\Users\aliss\Documentos\Github\Academia ATOS\PF_GerenciaEscolar\PF_GerenciaEscolar\PF_GerenciaEscolar\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 C:\Users\aliss\Documentos\Github\Academia ATOS\PF_GerenciaEscolar\PF_GerenciaEscolar\PF_GerenciaEscolar\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\aliss\Documentos\Github\Academia ATOS\PF_GerenciaEscolar\PF_GerenciaEscolar\PF_GerenciaEscolar\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
 C:\Users\aliss\Documentos\Github\Academia ATOS\PF_GerenciaEscolar\PF_GerenciaEscolar\PF_GerenciaEscolar\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
@@ -154,3 +153,4 @@ C:\Users\aliss\Documentos\Github\Academia ATOS\PF_GerenciaEscolar\PF_GerenciaEsc
 C:\Users\aliss\Documentos\Github\Academia ATOS\PF_GerenciaEscolar\PF_GerenciaEscolar\PF_GerenciaEscolar\obj\Debug\net8.0\PF_GerenciaEscolar.pdb
 C:\Users\aliss\Documentos\Github\Academia ATOS\PF_GerenciaEscolar\PF_GerenciaEscolar\PF_GerenciaEscolar\obj\Debug\net8.0\PF_GerenciaEscolar.genruntimeconfig.cache
 C:\Users\aliss\Documentos\Github\Academia ATOS\PF_GerenciaEscolar\PF_GerenciaEscolar\PF_GerenciaEscolar\obj\Debug\net8.0\ref\PF_GerenciaEscolar.dll
+C:\Users\aliss\Documentos\Github\Academia ATOS\PF_GerenciaEscolar\PF_GerenciaEscolar\PF_GerenciaEscolar\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll

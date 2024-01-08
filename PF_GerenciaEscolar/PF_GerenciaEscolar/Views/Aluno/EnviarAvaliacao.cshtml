@@ -7,7 +7,7 @@
     <div class="album py-5 bg-light">
         <section class="jumbotron text-center">
             <div class="container">
-                <h1 class="jumbotron-heading">Tem certeza de que deseja remover esta avaliação?</h1>
+                <h1 class="jumbotron-heading">Tem certeza de que deseja enviar esta avaliação?</h1>
             </div>
         </section>
         <div class="container" align=center>
@@ -25,9 +25,9 @@
                     </div>
                 </div>
             </div>
-            <form method="post" asp-action="RemoverAv" asp-route-id="@Model.Id">
-                <button type="submit" class="btn btn-danger float-right mt-3">Remover</button>
-                <a asp-controller="professor" asp-action="Avaliacoes" class="btn btn-secondary mt-3">Cancelar</a>
+            <form method="post" asp-action="EnviarAvaliacao" asp-route-id="@Model.Id">
+                <button type="submit" class="btn btn-success float-right mt-3">Enviar</button>
+                <a asp-controller="aluno" asp-action="Avaliacoes" class="btn btn-secondary mt-3">Cancelar</a>
             </form>
         </div>
     </div>

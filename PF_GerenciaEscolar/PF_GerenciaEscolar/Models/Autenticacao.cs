@@ -1,11 +1,11 @@
-﻿using Microsoft.AspNetCore.Identity;
-using PF_GerenciaEscolar.Data.Enum;
+﻿using PF_GerenciaEscolar.Data.Enum;
 using System.ComponentModel.DataAnnotations;
 
 namespace PF_GerenciaEscolar.Models
 {
-    public class Autenticacao : IdentityUser
+    public class Autenticacao
     {
+        [Key] public int Id { get; set; }
         public string? Cpf { get; set; }
         public string? Senha { get; set; }
         public Cargo Cargo { get; set; }
