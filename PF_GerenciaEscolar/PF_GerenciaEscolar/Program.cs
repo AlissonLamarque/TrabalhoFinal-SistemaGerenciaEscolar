@@ -5,6 +5,7 @@ using PF_GerenciaEscolar.Data;
 using PF_GerenciaEscolar.Interfaces;
 using PF_GerenciaEscolar.Models;
 using PF_GerenciaEscolar.Repositorio;
+using PF_GerenciaEscolar.Services;
 using static PF_GerenciaEscolar.Data.PF_GerenciaEscolarDbContext;
 
 namespace PF_GerenciaEscolar
@@ -32,13 +33,9 @@ namespace PF_GerenciaEscolar
             builder.Services.AddIdentity<IdentityUser, IdentityRole>()
                 .AddEntityFrameworkStores<PF_GerenciaEscolarDbContext>();
 
-            var app = builder.Build();
+            builder.Services.AddScoped<ISeedUserRoleInitial, SeedUserRoleInitial>();
 
-            //if (args.Length == 1 && args[0].ToLower() == "seeddata")
-            //{
-            //   await Seed.SeedUsersAndRolesAsync(app);
-            //  Seed.SeedData(app);
-            //}
+            var app = builder.Build();
 
             // Configure the HTTP request pipeline.
             if (!app.Environment.IsDevelopment())
@@ -53,6 +50,8 @@ namespace PF_GerenciaEscolar
 
             app.UseRouting();
 
+            await CriarPerfisUsuariosAsync(app);
+
             app.UseAuthentication();
 
             app.UseAuthorization();
@@ -62,6 +61,18 @@ namespace PF_GerenciaEscolar
                 pattern: "{controller=Home}/{action=Index}/{id?}");
 
             app.Run();
+
+            async Task CriarPerfisUsuariosAsync(WebApplication app)
+            {
+                var scopedFactory = app.Services.GetService<IServiceScopeFactory>();
+
+                using (var scope = scopedFactory.CreateScope())
+                {
+                    var service = scope.ServiceProvider.GetService<ISeedUserRoleInitial>();
+                    await service.SeedRolesAsync();
+                    await service.SeedUsersAsync();
+                }
+            }
         }
     }
 }
