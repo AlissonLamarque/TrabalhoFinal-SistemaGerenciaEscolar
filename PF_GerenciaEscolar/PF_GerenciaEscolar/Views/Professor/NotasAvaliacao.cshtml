@@ -1,5 +1,6 @@
 ﻿@using PF_GerenciaEscolar.Data.Enum
-@model Avaliacao
+@using static PF_GerenciaEscolar.ViewModels.NotaAvaliacaoViewModel
+@model AvaliacaoViewModel
 <!-- ESTÉTICA -->
 
 <!doctype html>
@@ -9,22 +10,23 @@
         <div class="album py-5 bg-light">
             <section class="jumbotron text-center">
                 <div class="container">
-                    <h1 class="jumbotron-heading">Avaliação @Model.Titulo</h1>
+                    <h1 class="jumbotron-heading">Avaliação @Model.Avaliacao.Titulo</h1>
                     <a asp-controller="professor" asp-action="Avaliacoes" class="btn btn-secondary my-2">Voltar</a>
                 </div>
             </section>
             <div class="container">
 
                 <div class="row">
-                    @foreach (var nota in Model.Notas)
+                    @foreach (var nota in Model.NotasAlunos)
                     {
                         <div class="col-md-4">
                             <div class="card mb-4 box-shadow">
                                 <div class="card-body">
-                                    <p class="card-text"> - Valor da Nota: @nota.Valor</p>
+                                    <p class="card-text">@nota.Aluno.Nome</p>
+                                    <p class="card-text">Nota: @nota.Nota.Valor</p>
                                     <div class="d-flex justify-content-between align-items-center">
                                         <div class="btn-group">
-                                            @*<a asp-controller="professor" asp-action="DetalhesAluno" asp-route-id="@aluno.Id" type="button" class="btn btn-sm btn-outline-secondary">Ver</a>*@
+                                            <a asp-controller="professor" asp-action="LancarNota" asp-route-id="@nota.Nota.AvaliacaoId" type="button" class="btn btn-sm btn-outline-secondary">Avaliar</a>
                                         </div>
                                     </div>
                                 </div>
@@ -38,6 +40,7 @@
     </main>
 </body>
 </html>
+
 
 
 <style>

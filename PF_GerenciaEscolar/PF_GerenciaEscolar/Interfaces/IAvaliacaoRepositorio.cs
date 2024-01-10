@@ -7,6 +7,7 @@ namespace PF_GerenciaEscolar.Interfaces
         Task<IEnumerable<Avaliacao>> GetAll();
 
         Task<Avaliacao> GetByIdAsync(int id);
+        Task<Avaliacao> GetByIdWithNotasAsync(int id);
 
         bool Adicionar(Avaliacao avaliacao);
         bool Atualizar(Avaliacao avaliacao);

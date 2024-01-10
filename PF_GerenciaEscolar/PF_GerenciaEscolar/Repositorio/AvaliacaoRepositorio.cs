@@ -36,6 +36,13 @@ namespace PF_GerenciaEscolar.Repositorio
             return await _contexto.Avaliacoes.FirstOrDefaultAsync(a => a.Id == id);
         }
 
+        public async Task<Avaliacao> GetByIdWithNotasAsync(int id)
+        {
+            return await _contexto.Avaliacoes
+                .Include(a => a.Notas)
+                .FirstOrDefaultAsync(a => a.Id == id);
+        }
+
         public bool Remover(Avaliacao avaliacao)
         {
             _contexto.Remove(avaliacao);

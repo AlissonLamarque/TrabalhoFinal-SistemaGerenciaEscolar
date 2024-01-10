@@ -6,6 +6,7 @@ using PF_GerenciaEscolar.Interfaces;
 using PF_GerenciaEscolar.Models;
 using PF_GerenciaEscolar.Repositorio;
 using PF_GerenciaEscolar.ViewModels;
+using static PF_GerenciaEscolar.ViewModels.NotaAvaliacaoViewModel;
 
 namespace PF_GerenciaEscolar.Controllers
 {
@@ -36,7 +37,7 @@ namespace PF_GerenciaEscolar.Controllers
         }
 
         // TURMA
-        public async Task<IActionResult> Turmas()
+        public IActionResult Turmas()
         {
             return View();
         }
@@ -55,7 +56,7 @@ namespace PF_GerenciaEscolar.Controllers
         }
 
         // AVALIAÇÃO
-        public async Task<IActionResult> Avaliacoes()
+        public IActionResult Avaliacoes()
         {
             var avaliacoes = _contexto.Avaliacoes.ToList();
             return View(avaliacoes);
@@ -73,7 +74,7 @@ namespace PF_GerenciaEscolar.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> CadastrarAvaliacao(CreateAvaliacaoViewModel AvaliacaoVM)
+        public IActionResult CadastrarAvaliacao(CreateAvaliacaoViewModel AvaliacaoVM)
         {
             if (!ModelState.IsValid)
             {
@@ -116,34 +117,69 @@ namespace PF_GerenciaEscolar.Controllers
         // NOTAS
         public async Task<IActionResult> NotasAvaliacao(int id)
         {
-            var avaliacao = await _avaliacaoRepositorio.GetByIdAsync(id);
+            var avaliacao = await _avaliacaoRepositorio.GetByIdWithNotasAsync(id);
 
-            if (avaliacao == null)
+            if (avaliacao == null) return View("Error");
+
+            var notasAlunosViewModel = new List<NotaAlunoViewModel>();
+
+            foreach (var nota in avaliacao.Notas)
             {
-                return View("Error");
+                var aluno = await _alunoRepositorio.GetByIdAsync(nota.AlunoId.Value);
+
+                notasAlunosViewModel.Add(new NotaAlunoViewModel
+                {
+                    Nota = nota,
+                    Aluno = aluno
+                });
             }
 
-            await _contexto.Entry(avaliacao)
-                .Collection(a => a.Notas)
-                .Query()
-                .Include(n => n.AlunoId)
-                .LoadAsync();
+            var viewModel = new AvaliacaoViewModel
+            {
+                Avaliacao = avaliacao,
+                NotasAlunos = notasAlunosViewModel
+            };
 
-            return View(avaliacao);
+            return View(viewModel);
         }
 
 
         public async Task<IActionResult> LancarNota(int id)
         {
-            var NotasAvaliacao = await _avaliacaoRepositorio.GetByIdAsync(id);
-            return View();
+            var NotasAvaliacao = await _notaRepositorio.GetByIdAsync(id);
+            if (NotasAvaliacao == null) return View("Error");
+            var LancarNotaVM = new LancarNotaViewModel
+            {
+                Id = NotasAvaliacao.Id,
+                Valor = NotasAvaliacao.Valor,
+                AlunoId = NotasAvaliacao.AlunoId,
+                AvaliacaoId = NotasAvaliacao.AvaliacaoId
+            };
+            return View(LancarNotaVM);
         }
 
-        /*
+        
         [HttpPost]
-        public async Task<IActionResult> LancarNota()
+        public IActionResult LancarNota(int id, LancarNotaViewModel LancarNotaVM)
         {
-            return View();
-        }*/
+            if (!ModelState.IsValid)
+            {
+                ModelState.AddModelError("", "Falha ao lançar nota");
+                return View(LancarNotaVM);
+            }
+
+            var Nota = new Nota
+            {
+                Id = LancarNotaVM.Id,
+                Valor = LancarNotaVM.Valor,
+                AlunoId = LancarNotaVM.AlunoId,
+                AvaliacaoId = LancarNotaVM.AvaliacaoId
+            };
+
+            _contexto.Entry(Nota).State = EntityState.Modified;
+
+            _notaRepositorio.Atualizar(Nota);
+            return RedirectToAction("Avaliacoes");
+        }
     }
 }

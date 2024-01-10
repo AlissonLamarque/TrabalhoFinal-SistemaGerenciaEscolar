@@ -27,13 +27,13 @@ namespace PF_GerenciaEscolar.Controllers
             _alunoRepositorio = alunoRepositorio;
         }
 
-        public async Task<IActionResult> Index()
+        public IActionResult Index()
         {
             return View();
         }
 
         // TURMA
-        public async Task<IActionResult> Turmas()
+        public ActionResult Turmas()
         {
             return View();
         }
@@ -46,7 +46,7 @@ namespace PF_GerenciaEscolar.Controllers
         }
 
         // DISCIPLINA
-        public async Task<IActionResult> Disciplinas()
+        public IActionResult Disciplinas()
         {
             return View();
         }
@@ -72,7 +72,7 @@ namespace PF_GerenciaEscolar.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> CadastrarProfessor(CreateProfessorViewModel ProfessorVM)
+        public IActionResult CadastrarProfessor(CreateProfessorViewModel ProfessorVM)
         {
             if (!ModelState.IsValid)
             {
@@ -114,7 +114,7 @@ namespace PF_GerenciaEscolar.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> EditarProfessor(int id, EditProfessorViewModel professorVM)
+        public IActionResult EditarProfessor(int id, EditProfessorViewModel professorVM)
         {
             if (!ModelState.IsValid)
             {
@@ -169,7 +169,7 @@ namespace PF_GerenciaEscolar.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> CadastrarAluno(CreateAlunoViewModel AlunoVM)
+        public IActionResult CadastrarAluno(CreateAlunoViewModel AlunoVM)
         {
             if (!ModelState.IsValid)
             {
@@ -210,7 +210,7 @@ namespace PF_GerenciaEscolar.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> EditarAluno(int id, EditAlunoViewModel alunoVM)
+        public IActionResult EditarAluno(int id, EditAlunoViewModel alunoVM)
         {
             if (!ModelState.IsValid)
             {

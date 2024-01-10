@@ -4,6 +4,7 @@ using PF_GerenciaEscolar.Interfaces;
 using PF_GerenciaEscolar.Models;
 using PF_GerenciaEscolar.Repositorio;
 using PF_GerenciaEscolar.ViewModels;
+using static PF_GerenciaEscolar.ViewModels.NotaDisciplinaViewModel;
 
 namespace PF_GerenciaEscolar.Controllers
 {
@@ -12,14 +13,17 @@ namespace PF_GerenciaEscolar.Controllers
         private readonly PF_GerenciaEscolarDbContext _contexto;
         private readonly IAvaliacaoRepositorio _avaliacaoRepositorio;
         private readonly INotaRepositorio _notaRepositorio;
+        private readonly IAlunoRepositorio _alunoRepositorio;
 
         public AlunoController(PF_GerenciaEscolarDbContext contexto, 
             IAvaliacaoRepositorio avaliacaoRepositorio,
-            INotaRepositorio notaRepositorio)
+            INotaRepositorio notaRepositorio,
+            IAlunoRepositorio alunoRepositorio)
         {
             _contexto = contexto;
             _avaliacaoRepositorio = avaliacaoRepositorio;
             _notaRepositorio = notaRepositorio;
+            _alunoRepositorio = alunoRepositorio;
         }
 
         public IActionResult Index()
@@ -28,9 +32,32 @@ namespace PF_GerenciaEscolar.Controllers
         }
 
         // NOTA
-        public IActionResult VisualizarNotas()
+        public async Task<IActionResult> VisualizarNotas(int id)
         {
-            return View();
+            var aluno = await _alunoRepositorio.GetByIdAsync(id);
+
+            if (aluno == null) return View("Error");
+
+            var NotasAluno = new List<NotaPorDisciplinaViewModel>();
+
+            foreach(var nota in aluno.Notas)
+            {
+                var avaliacao = await _avaliacaoRepositorio.GetByIdAsync(nota.AvaliacaoId.Value);
+
+                NotasAluno.Add(new NotaPorDisciplinaViewModel
+                {
+                    Nota = nota,
+                    Disciplina = avaliacao.Disciplina,
+                });
+            }
+
+            var viewModel = new AlunoViewModel
+            {
+                Aluno = aluno,
+                Notas = NotasAluno
+            };
+
+            return View(viewModel);
         }
 
         // AVALIAÇÃO
@@ -54,7 +81,7 @@ namespace PF_GerenciaEscolar.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> EnviarAvaliacao(CreateNotaViewModel avaliacaoVM) //ARRUMAR
+        public IActionResult EnviarAvaliacao(CreateNotaViewModel avaliacaoVM) //ARRUMAR
         {
             if (!ModelState.IsValid)
             {

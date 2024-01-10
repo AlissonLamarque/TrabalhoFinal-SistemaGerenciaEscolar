@@ -106,6 +106,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWx1bm9cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/aliss/Documentos/Github/Academia ATOS/PF_GerenciaEscolar/PF_GerenciaEscolar/PF_GerenciaEscolar/Views/Aluno/VisualizarNotas.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWx1bm9cVmlzdWFsaXphck5vdGFzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/aliss/Documentos/Github/Academia ATOS/PF_GerenciaEscolar/PF_GerenciaEscolar/PF_GerenciaEscolar/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -132,6 +136,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/aliss/Documentos/Github/Academia ATOS/PF_GerenciaEscolar/PF_GerenciaEscolar/PF_GerenciaEscolar/Views/Professor/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmVzc29yXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/aliss/Documentos/Github/Academia ATOS/PF_GerenciaEscolar/PF_GerenciaEscolar/PF_GerenciaEscolar/Views/Professor/LancarNota.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmVzc29yXExhbmNhck5vdGEuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/aliss/Documentos/Github/Academia ATOS/PF_GerenciaEscolar/PF_GerenciaEscolar/PF_GerenciaEscolar/Views/Professor/NotasAvaliacao.cshtml]

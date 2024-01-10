@@ -1,0 +1,33 @@
+﻿@using PF_GerenciaEscolar.Data.Enum
+@using PF_GerenciaEscolar.ViewModels
+@model LancarNotaViewModel
+
+<form method="post" asp-action="LancarNota" asp-route-id="@Model.Id">
+    <input type="hidden" value="Id" id="Id" />
+    <div class="mb-3">
+        <label asp-for="AlunoId" class="form-label">Aluno</label>
+        <input asp-for="AlunoId" class="form-control" readonly/>
+    </div>
+    <div class="mb-3">
+        <label asp-for="AvaliacaoId" class="form-label">Avaliação</label>
+        <input asp-for="AvaliacaoId" class="form-control" readonly>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Valor" class="form-label">Nota</label>
+        <input asp-for="Valor" class="form-control" placeholder="00,00">
+        <span asp-validation-for="Valor" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Avaliar</button>
+    <a asp-controller="professor" asp-action="NotasAvaliacao" asp-route-id="@Model.Id" class="btn btn-secondary my-2">Cancelar</a>
+</form>
+
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+        background: linear-gradient(to right, #ccffff, #1565c0)
+    }
+</style>
