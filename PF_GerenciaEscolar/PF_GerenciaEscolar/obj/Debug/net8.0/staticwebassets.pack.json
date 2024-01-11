@@ -13,8 +13,16 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\aliss\\Documentos\\Github\\Academia ATOS\\PROJETO FINAL\\PF_GerenciaEscolar\\PF_GerenciaEscolar\\PF_GerenciaEscolar\\wwwroot\\img\\Admin.png",
+      "PackagePath": "staticwebassets\\img\\Admin.png"
+    },
+    {
       "Id": "C:\\Users\\aliss\\Documentos\\Github\\Academia ATOS\\PROJETO FINAL\\PF_GerenciaEscolar\\PF_GerenciaEscolar\\PF_GerenciaEscolar\\wwwroot\\img\\AdminPerfil.png",
       "PackagePath": "staticwebassets\\img\\AdminPerfil.png"
+    },
+    {
+      "Id": "C:\\Users\\aliss\\Documentos\\Github\\Academia ATOS\\PROJETO FINAL\\PF_GerenciaEscolar\\PF_GerenciaEscolar\\PF_GerenciaEscolar\\wwwroot\\img\\Estudante.png",
+      "PackagePath": "staticwebassets\\img\\Estudante.png"
     },
     {
       "Id": "C:\\Users\\aliss\\Documentos\\Github\\Academia ATOS\\PROJETO FINAL\\PF_GerenciaEscolar\\PF_GerenciaEscolar\\PF_GerenciaEscolar\\wwwroot\\img\\EstudantePerfil.png",

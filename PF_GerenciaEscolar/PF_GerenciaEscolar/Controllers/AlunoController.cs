@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using PF_GerenciaEscolar.Data;
 using PF_GerenciaEscolar.Interfaces;
@@ -16,16 +17,19 @@ namespace PF_GerenciaEscolar.Controllers
         private readonly IAvaliacaoRepositorio _avaliacaoRepositorio;
         private readonly INotaRepositorio _notaRepositorio;
         private readonly IAlunoRepositorio _alunoRepositorio;
+        private readonly UserManager<IdentityUser> _userManager;
 
         public AlunoController(PF_GerenciaEscolarDbContext contexto, 
             IAvaliacaoRepositorio avaliacaoRepositorio,
             INotaRepositorio notaRepositorio,
-            IAlunoRepositorio alunoRepositorio)
+            IAlunoRepositorio alunoRepositorio,
+            UserManager<IdentityUser> userManager)
         {
             _contexto = contexto;
             _avaliacaoRepositorio = avaliacaoRepositorio;
             _notaRepositorio = notaRepositorio;
             _alunoRepositorio = alunoRepositorio;
+            _userManager = userManager;
         }
 
         public IActionResult Index()
@@ -83,18 +87,20 @@ namespace PF_GerenciaEscolar.Controllers
         }
 
         [HttpPost]
-        public IActionResult EnviarAvaliacao(CreateNotaViewModel avaliacaoVM) //ARRUMAR
+        public async Task<IActionResult> EnviarAvaliacao(CreateNotaViewModel avaliacaoVM)
         {
             if (!ModelState.IsValid)
             {
                 return View(avaliacaoVM);
             }
 
+            var usuarioLogado = await _userManager.GetUserAsync(User);
+
             var Nota = new Nota
             {
-                Valor = 0,
-                AlunoId = 1,
-                AvaliacaoId = 1
+                Valor = avaliacaoVM.Valor,
+                AlunoId = int.Parse(usuarioLogado.Id),
+                AvaliacaoId = avaliacaoVM.AvaliacaoId
             };
 
             _notaRepositorio.Adicionar(Nota);

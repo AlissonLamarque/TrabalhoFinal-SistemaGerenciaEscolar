@@ -1,54 +1,27 @@
-﻿@model Aluno
-
-<!doctype html>
-<html lang="en">
-<body>
-    <main role="main" >
-        <div class="container mt-4 mb-4 p-3 d-flex justify-content-center">
-            <div class="card p-4" id="perfil">
-                <div class=" image d-flex flex-column justify-content-center align-items-center"> 
-                    <button class="btn btn-light"> <img src="img/EstudantePerfil.png" height="250" width="250" /></button>
-                    <div class="d-flex flex-row justify-content-center align-items-center mt-3" id="info">
-                        <span class="follow">Nome</span>
-                    </div>
-                    <div class="d-flex flex-row justify-content-center align-items-center mt-3" id="info">
-                        <span class="follow">E-mail</span> 
-                    </div>
-                    <div class="d-flex flex-row justify-content-center align-items-center mt-3" id="info">
-                        <span class="follow">CPF</span>
-                    </div>
-                </div> 
+﻿
+<div class="album py-5" id="titulo">
+    <div class="container">
+        <section class="jumbotron text-center">
+            <div class="container">
+                <h1 class="jumbotron-heading">Bem Vindo ao Site da Escola</h1>
+                <h3 class="jumbotron-heading">Você está logado como Aluno</h3>
             </div>
-        </div>
-    </main>
-</body>
-</html>
-
-
+            <div class="container" id="imagem">
+                <img src="img/Estudante.png" />
+            </div>
+        </section>
+    </div>
+</div>
 <style>
     body {
         margin: 0;
         padding: 0;
-        font-family: sans-serif;
-        background: linear-gradient(to right, #ccffff, #1565c0)
+        background: linear-gradient(to right, #ccffff, #1565c0);
     }
 
-    button {
-        background: #D9E0E5;
-        border-radius: 5%;
-    }
-
-    #perfil{
-        background: #D9E0E5;
-        position: absolute;
+    img {
+        margin-top: 10%;
         width: 40%;
-        height: 50%;
-        border-radius: 5%;
-    }
-
-    #info{
-        padding-top: 5%;
-        font-size: 1.5em;
+        height: 40%;
     }
 </style>
-

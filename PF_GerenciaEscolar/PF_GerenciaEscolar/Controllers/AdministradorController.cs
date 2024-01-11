@@ -17,7 +17,6 @@ namespace PF_GerenciaEscolar.Controllers
         private readonly IProfessorRepositorio _professorRepositorio;
         private readonly IAlunoRepositorio _alunoRepositorio;
         private readonly UserManager<IdentityUser> _userManager;
-        private readonly SignInManager<IdentityUser> _signInManager;
         private readonly PF_GerenciaEscolarDbContext _contexto;
 
         public AdministradorController(PF_GerenciaEscolarDbContext contexto, 
@@ -88,7 +87,10 @@ namespace PF_GerenciaEscolar.Controllers
                 Nome = ProfessorVM.User.Nome,
                 Sobrenome = ProfessorVM.User.Sobrenome,
                 CPF = ProfessorVM.User.CPF,
-                Email = ProfessorVM.User.Email,
+                UserName = ProfessorVM.User.Email.ToLower(),
+                Email = ProfessorVM.User.Email.ToLower(),
+                NormalizedEmail = ProfessorVM.User.Email.ToUpper(),
+                NormalizedUserName = ProfessorVM.User.Email.ToUpper(),
                 PasswordHash = ProfessorVM.User.PasswordHash
             };
 
@@ -103,6 +105,11 @@ namespace PF_GerenciaEscolar.Controllers
             foreach (var error in result.Errors)
             {
                 ModelState.AddModelError(string.Empty, error.Description);
+            }
+
+            if (result.Succeeded)
+            {
+                await _userManager.AddToRoleAsync(user, "Professor");
             }
 
             _professorRepositorio.Adicionar(professor);
@@ -120,7 +127,10 @@ namespace PF_GerenciaEscolar.Controllers
                 Nome = professor.User.Nome,
                 Sobrenome = professor.User.Sobrenome,
                 CPF = professor.User.CPF,
-                Email = professor.User.Email,
+                UserName = professor.User.Email.ToLower(),
+                Email = professor.User.Email.ToLower(),
+                NormalizedEmail = professor.User.Email.ToUpper(),
+                NormalizedUserName = professor.User.Email.ToUpper(),
                 PasswordHash = professor.User.PasswordHash
             };
 
@@ -153,7 +163,10 @@ namespace PF_GerenciaEscolar.Controllers
             user.Nome = professorVM.User.Nome;
             user.Sobrenome = professorVM.User.Sobrenome;
             user.CPF = professorVM.User.CPF;
-            user.Email = professorVM.User.Email;
+            user.UserName = professorVM.User.Email.ToLower();
+            user.Email = professorVM.User.Email.ToLower();
+            user.NormalizedEmail = professorVM.User.Email.ToUpper();
+            user.NormalizedUserName = professorVM.User.Email.ToUpper();
 
             if (!string.IsNullOrEmpty(professorVM.User.PasswordHash))
             {
@@ -220,7 +233,10 @@ namespace PF_GerenciaEscolar.Controllers
             {
                 Nome = AlunoVM.User.Nome,
                 Sobrenome = AlunoVM.User.Sobrenome,
-                Email = AlunoVM.User.Email,
+                UserName = AlunoVM.User.Email.ToLower(),
+                Email = AlunoVM.User.Email.ToLower(),
+                NormalizedEmail = AlunoVM.User.Email.ToUpper(),
+                NormalizedUserName = AlunoVM.User.Email.ToUpper(),
                 CPF = AlunoVM.User.CPF,
                 PasswordHash = AlunoVM.User.PasswordHash,
             };
@@ -238,6 +254,11 @@ namespace PF_GerenciaEscolar.Controllers
                 ModelState.AddModelError(string.Empty, error.Description);
             }
 
+            if (result.Succeeded)
+            {
+                await _userManager.AddToRoleAsync(user, "Aluno");
+            }
+
             _alunoRepositorio.Adicionar(aluno);
             return RedirectToAction("Turmas");
         }
@@ -253,7 +274,10 @@ namespace PF_GerenciaEscolar.Controllers
                 {
                     Nome = aluno.User.Nome,
                     Sobrenome = aluno.User.Sobrenome,
-                    Email = aluno.User.Email,
+                    UserName = aluno.User.Email.ToLower(),
+                    Email = aluno.User.Email.ToLower(),
+                    NormalizedEmail = aluno.User.Email.ToUpper(),
+                    NormalizedUserName = aluno.User.Email.ToUpper(),
                     CPF = aluno.User.CPF,
                     PasswordHash = aluno.User.PasswordHash,
                 },
@@ -275,7 +299,10 @@ namespace PF_GerenciaEscolar.Controllers
             {
                 Nome = alunoVM.User.Nome,
                 Sobrenome = alunoVM.User.Sobrenome,
-                Email = alunoVM.User.Email,
+                UserName = alunoVM.User.Email.ToLower(),
+                Email = alunoVM.User.Email.ToLower(),
+                NormalizedEmail = alunoVM.User.Email.ToUpper(),
+                NormalizedUserName = alunoVM.User.Email.ToUpper(),
                 CPF = alunoVM.User.CPF,
                 PasswordHash = alunoVM.User.PasswordHash,
             };

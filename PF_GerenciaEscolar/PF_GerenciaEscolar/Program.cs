@@ -24,6 +24,7 @@ namespace PF_GerenciaEscolar
             builder.Services.AddScoped<IAvaliacaoRepositorio, AvaliacaoRepositorio>();
             builder.Services.AddScoped<INotaRepositorio, NotaRepositorio>();
 
+
             builder.Services.AddDbContext<PF_GerenciaEscolarDbContext>();
             
             builder.Services.AddIdentity<IdentityUser, IdentityRole>()

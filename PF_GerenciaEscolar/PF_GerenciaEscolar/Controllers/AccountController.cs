@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using PF_GerenciaEscolar.Models;
 using PF_GerenciaEscolar.ViewModels;
 
 namespace PF_GerenciaEscolar.Controllers

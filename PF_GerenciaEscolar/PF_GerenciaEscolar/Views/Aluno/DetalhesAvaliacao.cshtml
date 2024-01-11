@@ -18,7 +18,7 @@
                     {
                         @foreach (var avaliacao in Model)
                         {
-                            <div class="col-md-4" align="center">
+                            <div class="col-md-4 offset-4" align="center">
                                 <div class="card mb-4 box-shadow">
                                     <div class="card-body">
                                         <p class="card-text">@avaliacao.Titulo - @avaliacao.Valor</p>
@@ -47,5 +47,9 @@
         padding: 0;
         font-family: sans-serif;
         background: linear-gradient(to right, #ccffff, #1565c0)
+    }
+
+    .row{
+        padding-top: 5%;
     }
 </style>

@@ -1,5 +1,6 @@
 ﻿
 using Microsoft.AspNetCore.Identity;
+using PF_GerenciaEscolar.Models;
 
 namespace PF_GerenciaEscolar.Services
 {
@@ -9,7 +10,7 @@ namespace PF_GerenciaEscolar.Services
         private readonly RoleManager<IdentityRole> _roleManager;
 
         public SeedUserRoleInitial(
-            UserManager<IdentityUser> userManager, 
+            UserManager<IdentityUser> userManager,
             RoleManager<IdentityRole> roleManager)
         {
             _userManager = userManager;
@@ -53,6 +54,13 @@ namespace PF_GerenciaEscolar.Services
         {
             if (await _userManager.FindByEmailAsync("aluno@localhost") == null)
             {
+                var existingUser = await _userManager.FindByNameAsync("aluno@localhost");
+
+                if (existingUser != null)
+                {
+                    await _userManager.DeleteAsync(existingUser);
+                }
+
                 IdentityUser user = new IdentityUser();
                 user.UserName = "aluno@localhost";
                 user.Email = "aluno@localhost";
@@ -73,6 +81,13 @@ namespace PF_GerenciaEscolar.Services
 
             if (await _userManager.FindByEmailAsync("admin@localhost") == null)
             {
+                var existingUser = await _userManager.FindByNameAsync("aluno@localhost");
+
+                if (existingUser != null)
+                {
+                    await _userManager.DeleteAsync(existingUser);
+                }
+
                 IdentityUser user = new IdentityUser();
                 user.UserName = "admin@localhost";
                 user.Email = "admin@localhost";
@@ -93,6 +108,13 @@ namespace PF_GerenciaEscolar.Services
 
             if (await _userManager.FindByEmailAsync("professor@localhost") == null)
             {
+                var existingUser = await _userManager.FindByNameAsync("aluno@localhost");
+
+                if (existingUser != null)
+                {
+                    await _userManager.DeleteAsync(existingUser);
+                }
+
                 IdentityUser user = new IdentityUser();
                 user.UserName = "professor@localhost";
                 user.Email = "professor@localhost";

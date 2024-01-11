@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "kfkLWEqJzfu735lBxJOIshv4THJrc4OVAu1mDDty0Qk=",
+  "Hash": "JOU42bIqS00w8kJWpeXTpYBquyajgUqwmzqnq0u67P8=",
   "Source": "PF_GerenciaEscolar",
   "BasePath": "_content/PF_GerenciaEscolar",
   "Mode": "Default",
@@ -93,6 +93,25 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
+      "Identity": "C:\\Users\\aliss\\Documentos\\Github\\Academia ATOS\\PROJETO FINAL\\PF_GerenciaEscolar\\PF_GerenciaEscolar\\PF_GerenciaEscolar\\wwwroot\\img\\Admin.png",
+      "SourceId": "PF_GerenciaEscolar",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\aliss\\Documentos\\Github\\Academia ATOS\\PROJETO FINAL\\PF_GerenciaEscolar\\PF_GerenciaEscolar\\PF_GerenciaEscolar\\wwwroot\\",
+      "BasePath": "_content/PF_GerenciaEscolar",
+      "RelativePath": "img/Admin.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\Admin.png"
+    },
+    {
       "Identity": "C:\\Users\\aliss\\Documentos\\Github\\Academia ATOS\\PROJETO FINAL\\PF_GerenciaEscolar\\PF_GerenciaEscolar\\PF_GerenciaEscolar\\wwwroot\\img\\AdminPerfil.png",
       "SourceId": "PF_GerenciaEscolar",
       "SourceType": "Discovered",
@@ -110,6 +129,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\AdminPerfil.png"
+    },
+    {
+      "Identity": "C:\\Users\\aliss\\Documentos\\Github\\Academia ATOS\\PROJETO FINAL\\PF_GerenciaEscolar\\PF_GerenciaEscolar\\PF_GerenciaEscolar\\wwwroot\\img\\Estudante.png",
+      "SourceId": "PF_GerenciaEscolar",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\aliss\\Documentos\\Github\\Academia ATOS\\PROJETO FINAL\\PF_GerenciaEscolar\\PF_GerenciaEscolar\\PF_GerenciaEscolar\\wwwroot\\",
+      "BasePath": "_content/PF_GerenciaEscolar",
+      "RelativePath": "img/Estudante.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\Estudante.png"
     },
     {
       "Identity": "C:\\Users\\aliss\\Documentos\\Github\\Academia ATOS\\PROJETO FINAL\\PF_GerenciaEscolar\\PF_GerenciaEscolar\\PF_GerenciaEscolar\\wwwroot\\img\\EstudantePerfil.png",
