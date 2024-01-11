@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\aliss\\Documentos\\Github\\Academia ATOS\\PF_GerenciaEscolar\\PF_GerenciaEscolar\\PF_GerenciaEscolar\\PF_GerenciaEscolar.csproj": {}
+    "C:\\Users\\aliss\\Documentos\\Github\\Academia ATOS\\PROJETO FINAL\\PF_GerenciaEscolar\\PF_GerenciaEscolar\\PF_GerenciaEscolar\\PF_GerenciaEscolar.csproj": {}
   },
   "projects": {
-    "C:\\Users\\aliss\\Documentos\\Github\\Academia ATOS\\PF_GerenciaEscolar\\PF_GerenciaEscolar\\PF_GerenciaEscolar\\PF_GerenciaEscolar.csproj": {
+    "C:\\Users\\aliss\\Documentos\\Github\\Academia ATOS\\PROJETO FINAL\\PF_GerenciaEscolar\\PF_GerenciaEscolar\\PF_GerenciaEscolar\\PF_GerenciaEscolar.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\aliss\\Documentos\\Github\\Academia ATOS\\PF_GerenciaEscolar\\PF_GerenciaEscolar\\PF_GerenciaEscolar\\PF_GerenciaEscolar.csproj",
+        "projectUniqueName": "C:\\Users\\aliss\\Documentos\\Github\\Academia ATOS\\PROJETO FINAL\\PF_GerenciaEscolar\\PF_GerenciaEscolar\\PF_GerenciaEscolar\\PF_GerenciaEscolar.csproj",
         "projectName": "PF_GerenciaEscolar",
-        "projectPath": "C:\\Users\\aliss\\Documentos\\Github\\Academia ATOS\\PF_GerenciaEscolar\\PF_GerenciaEscolar\\PF_GerenciaEscolar\\PF_GerenciaEscolar.csproj",
+        "projectPath": "C:\\Users\\aliss\\Documentos\\Github\\Academia ATOS\\PROJETO FINAL\\PF_GerenciaEscolar\\PF_GerenciaEscolar\\PF_GerenciaEscolar\\PF_GerenciaEscolar.csproj",
         "packagesPath": "C:\\Users\\aliss\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\aliss\\Documentos\\Github\\Academia ATOS\\PF_GerenciaEscolar\\PF_GerenciaEscolar\\PF_GerenciaEscolar\\obj\\",
+        "outputPath": "C:\\Users\\aliss\\Documentos\\Github\\Academia ATOS\\PROJETO FINAL\\PF_GerenciaEscolar\\PF_GerenciaEscolar\\PF_GerenciaEscolar\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

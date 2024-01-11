@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "DadNkEVmoGOWsRrPv8m5PgWsHfZHGEeFcPb4KpJOEtt+TNgOu/B5BF4ZoAm4UiNvVZe4G7pUNO5uicvbgXErYg==",
+  "dgSpecHash": "6d7y6iHtbFCHYoK2mPxTYtHyrDl4f249Ttwg4qieoS0mn3BWAzQJcSKS8Z0jV6mHiX6qtZDUFvLpiTgtwhFqBw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\aliss\\Documentos\\Github\\Academia ATOS\\PF_GerenciaEscolar\\PF_GerenciaEscolar\\PF_GerenciaEscolar\\PF_GerenciaEscolar.csproj",
+  "projectFilePath": "C:\\Users\\aliss\\Documentos\\Github\\Academia ATOS\\PROJETO FINAL\\PF_GerenciaEscolar\\PF_GerenciaEscolar\\PF_GerenciaEscolar\\PF_GerenciaEscolar.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\aliss\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\aliss\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

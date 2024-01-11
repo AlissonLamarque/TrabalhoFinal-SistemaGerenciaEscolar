@@ -63,7 +63,7 @@ namespace PF_GerenciaEscolar.Services
 
                 user.SecurityStamp = Guid.NewGuid().ToString();
 
-                IdentityResult result = await _userManager.CreateAsync(user, "Numsey#2023");
+                IdentityResult result = await _userManager.CreateAsync(user, "Senha_123");
 
                 if (result.Succeeded)
                 {
@@ -83,7 +83,7 @@ namespace PF_GerenciaEscolar.Services
 
                 user.SecurityStamp = Guid.NewGuid().ToString();
 
-                IdentityResult result = await _userManager.CreateAsync(user, "Numsey#2023");
+                IdentityResult result = await _userManager.CreateAsync(user, "Senha_123");
 
                 if (result.Succeeded)
                 {
@@ -103,7 +103,7 @@ namespace PF_GerenciaEscolar.Services
 
                 user.SecurityStamp = Guid.NewGuid().ToString();
 
-                IdentityResult result = await _userManager.CreateAsync(user, "Numsey#2023");
+                IdentityResult result = await _userManager.CreateAsync(user, "Senha_123");
 
                 if (result.Succeeded)
                 {

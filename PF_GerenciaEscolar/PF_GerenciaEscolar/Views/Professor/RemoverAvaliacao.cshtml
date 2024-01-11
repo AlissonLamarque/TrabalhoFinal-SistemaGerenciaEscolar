@@ -1,10 +1,9 @@
 ﻿@using PF_GerenciaEscolar.Data.Enum
 @using PF_GerenciaEscolar.ViewModels
 @model Avaliacao
-<!-- CENTRALIZAR CARD / ESTÉTICA -->
 
 <main role="main">
-    <div class="album py-5 bg-light">
+    <div class="album py-5">
         <section class="jumbotron text-center">
             <div class="container">
                 <h1 class="jumbotron-heading">Tem certeza de que deseja remover esta avaliação?</h1>
@@ -12,9 +11,9 @@
         </section>
         <div class="container" align=center>
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-4 offset-4" id="card">
                     <div class="card mb-4 box-shadow">
-                        <div class="card-body" align="center">
+                        <div class="card-body">
                             <p class="card-text">@Model.Titulo - @Model.Valor</p>
                             <p class="card-text">@Model.Disciplina - @Model.Turma</p>
                             <p class="card-text">@Model.Inicio - @Model.Prazo</p>
@@ -42,5 +41,9 @@
         padding: 0;
         font-family: sans-serif;
         background: linear-gradient(to right, #ccffff, #1565c0)
+    }
+
+    #card {
+        padding-top: 5%;
     }
 </style>

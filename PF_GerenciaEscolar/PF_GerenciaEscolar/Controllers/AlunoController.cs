@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using PF_GerenciaEscolar.Data;
 using PF_GerenciaEscolar.Interfaces;
 using PF_GerenciaEscolar.Models;
@@ -8,6 +9,7 @@ using static PF_GerenciaEscolar.ViewModels.NotaDisciplinaViewModel;
 
 namespace PF_GerenciaEscolar.Controllers
 {
+    [Authorize(Roles = "Aluno")]
     public class AlunoController : Controller
     {
         private readonly PF_GerenciaEscolarDbContext _contexto;

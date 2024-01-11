@@ -33,7 +33,7 @@ namespace PF_GerenciaEscolar.Repositorio
 
         public async Task<Professor> GetByIdAsync(int id)
         {
-            return await _contexto.Professores.Include(i => i.Autenticacao).FirstOrDefaultAsync(p => p.Id == id);
+            return await _contexto.Professores.Include(i => i.User).FirstOrDefaultAsync(p => p.Id == id);
         }
 
         public bool Remover(Professor professor)

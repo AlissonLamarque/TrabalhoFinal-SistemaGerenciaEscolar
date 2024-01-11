@@ -12,8 +12,8 @@ using PF_GerenciaEscolar.Data;
 namespace PF_GerenciaEscolar.Migrations
 {
     [DbContext(typeof(PF_GerenciaEscolarDbContext))]
-    [Migration("20240108183923_AddIdentity")]
-    partial class AddIdentity
+    [Migration("20240111011003_ApplicationUser")]
+    partial class ApplicationUser
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -21,6 +21,9 @@ namespace PF_GerenciaEscolar.Migrations
 #pragma warning disable 612, 618
             modelBuilder
                 .HasAnnotation("ProductVersion", "7.0.14")
+                .HasAnnotation("Proxies:ChangeTracking", false)
+                .HasAnnotation("Proxies:CheckEquality", false)
+                .HasAnnotation("Proxies:LazyLoading", true)
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
@@ -89,6 +92,10 @@ namespace PF_GerenciaEscolar.Migrations
                         .IsConcurrencyToken()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("Discriminator")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Email")
                         .HasMaxLength(256)
                         .HasColumnType("nvarchar(256)");
@@ -140,6 +147,10 @@ namespace PF_GerenciaEscolar.Migrations
                         .HasFilter("[NormalizedUserName] IS NOT NULL");
 
                     b.ToTable("AspNetUsers", (string)null);
+
+                    b.HasDiscriminator<string>("Discriminator").HasValue("IdentityUser");
+
+                    b.UseTphMappingStrategy();
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<string>", b =>
@@ -223,30 +234,6 @@ namespace PF_GerenciaEscolar.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
-            modelBuilder.Entity("PF_GerenciaEscolar.Models.Administrador", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<int?>("AutenticacaoId")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Email")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Nome")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("AutenticacaoId");
-
-                    b.ToTable("Administradores");
-                });
-
             modelBuilder.Entity("PF_GerenciaEscolar.Models.Aluno", b =>
                 {
                     b.Property<int>("Id")
@@ -255,45 +242,17 @@ namespace PF_GerenciaEscolar.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<int?>("AutenticacaoId")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Email")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Nome")
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<int>("Turma")
                         .HasColumnType("int");
 
+                    b.Property<string>("UserId")
+                        .HasColumnType("nvarchar(450)");
+
                     b.HasKey("Id");
 
-                    b.HasIndex("AutenticacaoId");
+                    b.HasIndex("UserId");
 
                     b.ToTable("Alunos");
-                });
-
-            modelBuilder.Entity("PF_GerenciaEscolar.Models.Autenticacao", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<int>("Cargo")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Cpf")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Senha")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Autenticadores");
                 });
 
             modelBuilder.Entity("PF_GerenciaEscolar.Models.Avaliacao", b =>
@@ -361,23 +320,33 @@ namespace PF_GerenciaEscolar.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<int?>("AutenticacaoId")
-                        .HasColumnType("int");
-
                     b.Property<int>("Disciplina")
                         .HasColumnType("int");
 
-                    b.Property<string>("Email")
+                    b.Property<string>("UserId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("Professores");
+                });
+
+            modelBuilder.Entity("PF_GerenciaEscolar.Models.ApplicationUser", b =>
+                {
+                    b.HasBaseType("Microsoft.AspNetCore.Identity.IdentityUser");
+
+                    b.Property<string>("CPF")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Nome")
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("Id");
+                    b.Property<string>("Sobrenome")
+                        .HasColumnType("nvarchar(max)");
 
-                    b.HasIndex("AutenticacaoId");
-
-                    b.ToTable("Professores");
+                    b.HasDiscriminator().HasValue("ApplicationUser");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -431,22 +400,13 @@ namespace PF_GerenciaEscolar.Migrations
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("PF_GerenciaEscolar.Models.Administrador", b =>
-                {
-                    b.HasOne("PF_GerenciaEscolar.Models.Autenticacao", "Autenticacao")
-                        .WithMany("Administradores")
-                        .HasForeignKey("AutenticacaoId");
-
-                    b.Navigation("Autenticacao");
-                });
-
             modelBuilder.Entity("PF_GerenciaEscolar.Models.Aluno", b =>
                 {
-                    b.HasOne("PF_GerenciaEscolar.Models.Autenticacao", "Autenticacao")
-                        .WithMany("Alunos")
-                        .HasForeignKey("AutenticacaoId");
+                    b.HasOne("PF_GerenciaEscolar.Models.ApplicationUser", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId");
 
-                    b.Navigation("Autenticacao");
+                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("PF_GerenciaEscolar.Models.Nota", b =>
@@ -462,25 +422,16 @@ namespace PF_GerenciaEscolar.Migrations
 
             modelBuilder.Entity("PF_GerenciaEscolar.Models.Professor", b =>
                 {
-                    b.HasOne("PF_GerenciaEscolar.Models.Autenticacao", "Autenticacao")
-                        .WithMany("Professores")
-                        .HasForeignKey("AutenticacaoId");
+                    b.HasOne("PF_GerenciaEscolar.Models.ApplicationUser", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId");
 
-                    b.Navigation("Autenticacao");
+                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("PF_GerenciaEscolar.Models.Aluno", b =>
                 {
                     b.Navigation("Notas");
-                });
-
-            modelBuilder.Entity("PF_GerenciaEscolar.Models.Autenticacao", b =>
-                {
-                    b.Navigation("Administradores");
-
-                    b.Navigation("Alunos");
-
-                    b.Navigation("Professores");
                 });
 
             modelBuilder.Entity("PF_GerenciaEscolar.Models.Avaliacao", b =>

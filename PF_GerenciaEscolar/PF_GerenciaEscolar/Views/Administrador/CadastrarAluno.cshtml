@@ -4,26 +4,31 @@
 
 <form method="post" asp-action="CadastrarAluno">
     <div class="mb-3">
-        <label asp-for="Nome" class="form-label">Nome</label>
-        <input asp-for="Nome" class="form-control" placeholder="Digite seu nome">
-        <span asp-validation-for="Nome" class="text-danger"></span>
+        <label asp-for="User.Nome" class="form-label">Nome</label>
+        <input asp-for="User.Nome" class="form-control" placeholder="Primeiro nome">
+        <span asp-validation-for="User.Nome" class="text-danger"></span>
     </div>
     <div class="mb-3">
-        <label asp-for="Email" class="form-label">Email</label>
-        <input asp-for="Email" class="form-control" placeholder="Digite um email válido">
-        <span asp-validation-for="Email" class="text-danger"></span>
+        <label asp-for="User.Sobrenome" class="form-label">Nome</label>
+        <input asp-for="User.Sobrenome" class="form-control" placeholder="Último nome">
+        <span asp-validation-for="User.Sobrenome" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="User.Email" class="form-label">Email</label>
+        <input asp-for="User.Email" class="form-control" placeholder="Digite um email válido">
+        <span asp-validation-for="User.Email" class="text-danger"></span>
     </div>
 
     <div class="mb-3">
-        <label asp-for="Autenticacao.Cpf" class="form-label">CPF</label>
-        <input asp-for="Autenticacao.Cpf" class="form-control" placeholder="Digite seu CPF">
-        <span asp-validation-for="Autenticacao.Cpf" class="text-danger"></span>
+        <label asp-for="User.CPF" class="form-label">CPF</label>
+        <input asp-for="User.CPF" class="form-control" placeholder="Digite seu CPF">
+        <span asp-validation-for="User.CPF" class="text-danger"></span>
     </div>
 
     <div class="mb-3">
-        <label asp-for="Autenticacao.Senha" class="form-label">Senha</label>
-        <input asp-for="Autenticacao.Senha" type="password" class="form-control" placeholder="Digite uma senha válida">
-        <span asp-validation-for="Autenticacao.Senha" class="text-danger"></span>
+        <label asp-for="User.PasswordHash" class="form-label">Senha</label>
+        <input asp-for="User.PasswordHash" type="password" class="form-control" placeholder="Digite uma senha válida">
+        <span asp-validation-for="User.PasswordHash" class="text-danger"></span>
     </div>
 
     <div class="mb-3">

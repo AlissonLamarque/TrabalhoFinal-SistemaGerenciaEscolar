@@ -1,13 +1,12 @@
 ﻿@using PF_GerenciaEscolar.Data.Enum
 @using static PF_GerenciaEscolar.ViewModels.NotaAvaliacaoViewModel
 @model AvaliacaoViewModel
-<!-- ESTÉTICA -->
 
 <!doctype html>
-<html lang="en">
+<html lang="pt-br">
 <body>
     <main role="main">
-        <div class="album py-5 bg-light">
+        <div class="album py-5">
             <section class="jumbotron text-center">
                 <div class="container">
                     <h1 class="jumbotron-heading">Avaliação @Model.Avaliacao.Titulo</h1>
@@ -22,7 +21,7 @@
                         <div class="col-md-4">
                             <div class="card mb-4 box-shadow">
                                 <div class="card-body">
-                                    <p class="card-text">@nota.Aluno.Nome</p>
+                                    <p class="card-text">@nota.Aluno.User.Nome</p>
                                     <p class="card-text">Nota: @nota.Nota.Valor</p>
                                     <div class="d-flex justify-content-between align-items-center">
                                         <div class="btn-group">

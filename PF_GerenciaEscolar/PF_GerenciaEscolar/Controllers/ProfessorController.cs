@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using PF_GerenciaEscolar.Data;
 using PF_GerenciaEscolar.Data.Enum;
@@ -10,6 +11,7 @@ using static PF_GerenciaEscolar.ViewModels.NotaAvaliacaoViewModel;
 
 namespace PF_GerenciaEscolar.Controllers
 {
+    [Authorize(Roles = "Professor")]
     public class ProfessorController : Controller
     {
         private readonly PF_GerenciaEscolarDbContext _contexto;

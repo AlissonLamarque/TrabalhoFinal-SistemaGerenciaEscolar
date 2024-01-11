@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using PF_GerenciaEscolar.Data;
 using PF_GerenciaEscolar.Data.Enum;
@@ -9,22 +11,24 @@ using PF_GerenciaEscolar.ViewModels;
 
 namespace PF_GerenciaEscolar.Controllers
 {
+    [Authorize(Roles = "Admin")]
     public class AdministradorController : Controller
     {
-        private readonly IAdministradorRepositorio _administradorRepositorio;
         private readonly IProfessorRepositorio _professorRepositorio;
         private readonly IAlunoRepositorio _alunoRepositorio;
+        private readonly UserManager<IdentityUser> _userManager;
+        private readonly SignInManager<IdentityUser> _signInManager;
         private readonly PF_GerenciaEscolarDbContext _contexto;
 
         public AdministradorController(PF_GerenciaEscolarDbContext contexto, 
-            IAdministradorRepositorio administradorRepositorio, 
             IProfessorRepositorio professorRepositorio,
-            IAlunoRepositorio alunoRepositorio)
+            IAlunoRepositorio alunoRepositorio, 
+            UserManager<IdentityUser> userManager)
         {
             _contexto = contexto;
-            _administradorRepositorio = administradorRepositorio;
             _professorRepositorio = professorRepositorio;
             _alunoRepositorio = alunoRepositorio;
+            _userManager = userManager;
         }
 
         public IActionResult Index()
@@ -72,25 +76,34 @@ namespace PF_GerenciaEscolar.Controllers
         }
 
         [HttpPost]
-        public IActionResult CadastrarProfessor(CreateProfessorViewModel ProfessorVM)
+        public async Task<IActionResult> CadastrarProfessor(CreateProfessorViewModel ProfessorVM)
         {
             if (!ModelState.IsValid)
             {
                 return View(ProfessorVM);
             }
 
+            var user = new ApplicationUser
+            {
+                Nome = ProfessorVM.User.Nome,
+                Sobrenome = ProfessorVM.User.Sobrenome,
+                CPF = ProfessorVM.User.CPF,
+                Email = ProfessorVM.User.Email,
+                PasswordHash = ProfessorVM.User.PasswordHash
+            };
+
             var professor = new Professor
             {
-                Nome = ProfessorVM.Nome,
-                Email = ProfessorVM.Email,
-                Autenticacao = new Autenticacao
-                {
-                    Cpf = ProfessorVM.Autenticacao.Cpf,
-                    Senha = ProfessorVM.Autenticacao.Senha,
-                    Cargo = Cargo.Professor
-                },
+                User = user,
                 Disciplina = ProfessorVM.Disciplina
             };
+ 
+            var result = await _userManager.CreateAsync(user, user.PasswordHash);
+
+            foreach (var error in result.Errors)
+            {
+                ModelState.AddModelError(string.Empty, error.Description);
+            }
 
             _professorRepositorio.Adicionar(professor);
             return RedirectToAction("Disciplinas");
@@ -99,22 +112,30 @@ namespace PF_GerenciaEscolar.Controllers
         public async Task<IActionResult> EditarProfessor(int id)
         {
             var professor = await _professorRepositorio.GetByIdAsync(id);
-            if(professor == null) return View("Error");
+
+            if (professor == null) return View("Error");
+
+            var user = new ApplicationUser
+            {
+                Nome = professor.User.Nome,
+                Sobrenome = professor.User.Sobrenome,
+                CPF = professor.User.CPF,
+                Email = professor.User.Email,
+                PasswordHash = professor.User.PasswordHash
+            };
+
             var professorVM = new EditProfessorViewModel
             {
                 Id = professor.Id,
-                Nome = professor.Nome,
-                Email = professor.Email,
-                AutenticacaoId = professor.AutenticacaoId,
-                Autenticacao = professor.Autenticacao,
+                User = user,
                 Disciplina = professor.Disciplina
             };
-            return View(professorVM);
 
+            return View(professorVM);
         }
 
         [HttpPost]
-        public IActionResult EditarProfessor(int id, EditProfessorViewModel professorVM)
+        public async Task<IActionResult> EditarProfessor(int id, EditProfessorViewModel professorVM)
         {
             if (!ModelState.IsValid)
             {
@@ -122,19 +143,38 @@ namespace PF_GerenciaEscolar.Controllers
                 return View(professorVM);
             }
 
+            var user = await _contexto.Users.FirstOrDefaultAsync(u => u.Id == id.ToString());
+
+            if (user == null)
+            {
+                return NotFound();
+            }
+
+            user.Nome = professorVM.User.Nome;
+            user.Sobrenome = professorVM.User.Sobrenome;
+            user.CPF = professorVM.User.CPF;
+            user.Email = professorVM.User.Email;
+
+            if (!string.IsNullOrEmpty(professorVM.User.PasswordHash))
+            {
+                user.PasswordHash = professorVM.User.PasswordHash;
+            }
+
+            var result = await _userManager.UpdateAsync(user);
+
+            if (!result.Succeeded) return View("Error");
+
             var professor = new Professor
             {
                 Id = professorVM.Id,
-                Nome = professorVM.Nome,
-                Email = professorVM.Email,
-                AutenticacaoId = professorVM.AutenticacaoId,
-                Autenticacao = professorVM.Autenticacao,
+                UserId = user.Id,
+                User = user,
                 Disciplina = professorVM.Disciplina
             };
 
             _contexto.Entry(professor).State = EntityState.Modified;
-
             _professorRepositorio.Atualizar(professor);
+
             return RedirectToAction("Disciplinas");
         }
 
@@ -169,25 +209,34 @@ namespace PF_GerenciaEscolar.Controllers
         }
 
         [HttpPost]
-        public IActionResult CadastrarAluno(CreateAlunoViewModel AlunoVM)
+        public async Task<IActionResult> CadastrarAluno(CreateAlunoViewModel AlunoVM)
         {
             if (!ModelState.IsValid)
             {
                 return View(AlunoVM);
             }
 
+            var user = new ApplicationUser
+            {
+                Nome = AlunoVM.User.Nome,
+                Sobrenome = AlunoVM.User.Sobrenome,
+                Email = AlunoVM.User.Email,
+                CPF = AlunoVM.User.CPF,
+                PasswordHash = AlunoVM.User.PasswordHash,
+            };
+
             var aluno = new Aluno
             {
-                Nome = AlunoVM.Nome,
-                Email = AlunoVM.Email,
-                Autenticacao = new Autenticacao
-                {
-                    Cpf = AlunoVM.Autenticacao.Cpf,
-                    Senha = AlunoVM.Autenticacao.Senha,
-                    Cargo = Cargo.Aluno
-                },
+                User = user,
                 Turma = AlunoVM.Turma
             };
+
+            var result = await _userManager.CreateAsync(user, user.PasswordHash);
+
+            foreach (var error in result.Errors)
+            {
+                ModelState.AddModelError(string.Empty, error.Description);
+            }
 
             _alunoRepositorio.Adicionar(aluno);
             return RedirectToAction("Turmas");
@@ -200,10 +249,14 @@ namespace PF_GerenciaEscolar.Controllers
             var alunoVM = new EditAlunoViewModel
             {
                 Id = aluno.Id,
-                Nome = aluno.Nome,
-                Email = aluno.Email,
-                AutenticacaoId = aluno.AutenticacaoId,
-                Autenticacao = aluno.Autenticacao,
+                User = new ApplicationUser
+                {
+                    Nome = aluno.User.Nome,
+                    Sobrenome = aluno.User.Sobrenome,
+                    Email = aluno.User.Email,
+                    CPF = aluno.User.CPF,
+                    PasswordHash = aluno.User.PasswordHash,
+                },
                 Turma = aluno.Turma
             };
             return View(alunoVM);
@@ -218,15 +271,25 @@ namespace PF_GerenciaEscolar.Controllers
                 return View(alunoVM);
             }
 
+            var user = new ApplicationUser
+            {
+                Nome = alunoVM.User.Nome,
+                Sobrenome = alunoVM.User.Sobrenome,
+                Email = alunoVM.User.Email,
+                CPF = alunoVM.User.CPF,
+                PasswordHash = alunoVM.User.PasswordHash,
+            };
+
             var aluno = new Aluno
             {
                 Id = alunoVM.Id,
-                Nome = alunoVM.Nome,
-                Email = alunoVM.Email,
-                AutenticacaoId = alunoVM.AutenticacaoId,
-                Autenticacao = alunoVM.Autenticacao,
+                User = user,
                 Turma = alunoVM.Turma
             };
+
+            var result = _userManager.UpdateAsync(user);
+
+            if (result.IsCanceled) return View("Error");
 
             _contexto.Entry(aluno).State = EntityState.Modified;
 

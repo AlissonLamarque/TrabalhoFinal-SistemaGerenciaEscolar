@@ -1,33 +1,23 @@
 ﻿@model Professor
-<!-- ESTÉTICA -->
 
 <!doctype html>
-<html lang="en">
+<html lang="pt-br">
 <body>
-    <main role="main">
-
-        <section class="jumbotron text-center">
-            <div class="container">
-                <h1 class="jumbotron-heading">Página Inicial</h1>
-                <p>
-                    <a asp-controller="professor" asp-action="Turmas" class="btn btn-primary my-2">Turmas</a>
-                </p>
-            </div>
-        </section>
+    <main role="main" >
         <div class="container mt-4 mb-4 p-3 d-flex justify-content-center">
-            <div class="card p-4">
-                <div class=" image d-flex flex-column justify-content-center align-items-center">
-                    <button class="btn btn-secondary"> <img src="https://th.bing.com/th/id/OIP.xo-BCC1ZKFpLL65D93eHcgHaGe?rs=1&pid=ImgDetMain" height="100" width="100" /></button>
-                    <div class="d-flex flex-row justify-content-center align-items-center mt-3">
+            <div class="card p-4" id="perfil">
+                <div class=" image d-flex flex-column justify-content-center align-items-center"> 
+                    <button class="btn btn-light"> <img src="img/ProfessorPerfil.png" height="250" width="250" /></button>
+                    <div class="d-flex flex-row justify-content-center align-items-center mt-3" id="info">
                         <span class="follow">Nome</span>
                     </div>
-                    <div class="d-flex flex-row justify-content-center align-items-center mt-3">
-                        <span class="follow">E-mail</span>
+                    <div class="d-flex flex-row justify-content-center align-items-center mt-3" id="info">
+                        <span class="follow">E-mail</span> 
                     </div>
-                    <div class="d-flex flex-row justify-content-center align-items-center mt-3">
+                    <div class="d-flex flex-row justify-content-center align-items-center mt-3" id="info">
                         <span class="follow">CPF</span>
                     </div>
-                </div>
+                </div> 
             </div>
         </div>
     </main>
@@ -42,4 +32,22 @@
         font-family: sans-serif;
         background: linear-gradient(to right, #ccffff, #1565c0)
     }
+
+    button {
+        border-radius: 5%;
+    }
+
+    #perfil{
+        background: #D9E0E5;
+        position: absolute;
+        width: 40%;
+        height: 50%;
+        border-radius: 5%;
+    }
+
+    #info{
+        padding-top: 5%;
+        font-size: 1.5em;
+    }
 </style>
+

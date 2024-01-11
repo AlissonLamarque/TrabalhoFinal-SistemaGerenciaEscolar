@@ -19,16 +19,12 @@ namespace PF_GerenciaEscolar
             // Add services to the container.
             builder.Services.AddControllersWithViews();
 
-            builder.Services.AddScoped<IAdministradorRepositorio, AdministradorRepositorio>();
             builder.Services.AddScoped<IProfessorRepositorio, ProfessorRepositorio>();
             builder.Services.AddScoped<IAlunoRepositorio, AlunoRepositorio>();
             builder.Services.AddScoped<IAvaliacaoRepositorio, AvaliacaoRepositorio>();
             builder.Services.AddScoped<INotaRepositorio, NotaRepositorio>();
 
-            builder.Services.AddDbContext<PF_GerenciaEscolarDbContext>(options =>
-            {
-                options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
-            });
+            builder.Services.AddDbContext<PF_GerenciaEscolarDbContext>();
             
             builder.Services.AddIdentity<IdentityUser, IdentityRole>()
                 .AddEntityFrameworkStores<PF_GerenciaEscolarDbContext>();

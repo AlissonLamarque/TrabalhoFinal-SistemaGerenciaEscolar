@@ -5,9 +5,7 @@
 <html lang="en">
 <body>
     <main role="main">
-
-
-        <div class="album py-5 bg-light">
+        <div class="album py-5">
             <section class="jumbotron text-center">
                 <div class="container">
                     <h1 class="jumbotron-heading">Disciplina de @ViewBag.Disciplina</h1>
@@ -24,7 +22,7 @@
                             <div class="col-md-4">
                                 <div class="card mb-4 box-shadow">
                                     <div class="card-body">
-                                        <p class="card-text">@professor.Nome - @professor.Email</p>
+                                        <p class="card-text">@professor.User.Nome - @professor.User.Email</p>
                                         <div class="d-flex justify-content-between align-items-center">
                                             <div class="btn-group">
                                                 <a asp-controller="Administrador" asp-action="DetalhesProfessor" asp-route-id="@professor.Id" type="button" class="btn btn-sm btn-outline-secondary">Ver</a>

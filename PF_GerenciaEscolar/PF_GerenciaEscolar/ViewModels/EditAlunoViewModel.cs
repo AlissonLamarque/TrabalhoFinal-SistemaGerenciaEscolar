@@ -6,10 +6,7 @@ namespace PF_GerenciaEscolar.ViewModels
     public class EditAlunoViewModel
     {
         public int Id { get; set; }
-        public string Nome { get; set; }
-        public string Email { get; set; }
-        public int? AutenticacaoId { get; set; }
-        public Autenticacao Autenticacao { get; set; }
+        public ApplicationUser User { get; set; }
         public Turma Turma { get; set; }
     }
 }

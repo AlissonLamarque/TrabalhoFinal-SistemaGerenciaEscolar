@@ -10,12 +10,17 @@ namespace PF_GerenciaEscolar.Data
         public PF_GerenciaEscolarDbContext(DbContextOptions<PF_GerenciaEscolarDbContext> options) : base(options)
         { }
 
-        public DbSet<Administrador> Administradores { get; set; }
-        public DbSet<Autenticacao> Autenticadores { get; set; }
+        public DbSet<ApplicationUser> Users { get; set; }
         public DbSet<Professor> Professores { get; set; }
         public DbSet<Aluno> Alunos { get; set; }
         public DbSet<Avaliacao> Avaliacoes { get; set; }
         public DbSet<Nota> Notas { get; set; }
+
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            optionsBuilder.UseSqlServer(@"Data Source=DEVELOPER;initial Catalog=PF_GerenciaEscolar;User ID=PF_GerenciaEscolar;password=senha_PF;Trust Server Certificate=True;language=Portuguese;Trusted_Connection=True;");
+            optionsBuilder.UseLazyLoadingProxies();
+        }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

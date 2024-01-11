@@ -1,7 +1,6 @@
 ﻿@using PF_GerenciaEscolar.Data.Enum
 @using PF_GerenciaEscolar.ViewModels
 @model CreateAvaliacaoViewModel
-<!-- VALIDAÇÃO -->
 
 <form method="post" asp-action="CadastrarAvaliacao">
     <div class="mb-3">
@@ -35,7 +34,7 @@
         </select>
     </div>
     <button type="submit" class="btn btn-primary">Enviar</button>
-    <a asp-controller="administrador" asp-action="DetalhesDisciplina" class="btn btn-secondary my-2">Cancelar</a>
+    <a asp-controller="professor" asp-action="Avaliacoes" class="btn btn-secondary my-2">Cancelar</a>
 
 </form>
 

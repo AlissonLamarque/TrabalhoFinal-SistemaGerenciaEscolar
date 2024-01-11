@@ -6,7 +6,7 @@
     <ul class="nav-item">
         <form method="post" asp-controller="account" asp-action="logout">
             <button type="submit" style="width:auto"
-            class="nav-link btn btn-link py-0">
+            class="nav-link text-dark btn btn-link py-0">
                 Sair @User.Identity.Name
             </button>
         </form>
@@ -15,9 +15,6 @@
 else
 {
     <ul class="nav-item">
-        <a class="nav-link" asp-controller="Account" asp-action="Register">Registrar</a>
-    </ul>
-    <ul class="nav-item">
-        <a class="nav-link" asp-controller="Account" asp-action="Login">Login</a>
+        <a class="nav-link text-dark" asp-controller="Account" asp-action="Login">Login</a>
     </ul>
 }
